@@ -6,7 +6,7 @@
 
 THEME='Catppuccin-Mocha-Standard-Sapphire-Dark'
 ICONS='Papirus-Dark'
-FONT='archcraft 10'
+FONT='archcraft 9'
 CURSOR='Qogirr-Dark'
 
 SCHEMA='gsettings set org.gnome.desktop.interface'

@@ -1,12 +1,10 @@
 #!/usr/bin/env bash
 
-## Copyright (C) 2020-2022 Aditya Shakya <adi1090x@gmail.com>
-##
 ## Set GTK Themes, Icons, Cursor and Fonts
 
 THEME='Catppuccin-Mocha-Standard-Sapphire-Dark'
 ICONS='Papirus-Dark'
-FONT='archcraft 9'
+FONT='Noto Sans 10'
 CURSOR='Qogirr-Dark'
 
 SCHEMA='gsettings set org.gnome.desktop.interface'

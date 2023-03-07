@@ -2,6 +2,8 @@
  * Copyright (C) 2020-2022 Aditya Shakya <adi1090x@gmail.com>
 */
 
+@import "styles/mocha.css";
+
 /** ********** Fonts ********** **/
 * {
 	font-family: "JetBrains Mono", "Iosevka Nerd Font", archcraft, sans-serif;
@@ -10,11 +12,12 @@
 
 /** ********** Waybar Window ********** **/
 window#waybar {
-	background-color: #1e1e2e;
-	color: #1e1e2e;
-	border-bottom: 2px solid #313244;
+	background-color: @Crust;
+	color: @Crust;
 	transition-property: background-color;
 	transition-duration: .5s;
+	opacity: 0.9;
+	border-radius: 4px;
 }
 
 window#waybar.hidden {

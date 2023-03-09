@@ -16,8 +16,6 @@ window#waybar {
 	color: @Crust;
 	transition-property: background-color;
 	transition-duration: .5s;
-	opacity: 0.9;
-	border-radius: 4px;
 }
 
 window#waybar.hidden {
@@ -149,27 +147,6 @@ window#waybar.hidden {
 #network.wifi {}
 
 /** ********** Custom ********** **/
-#custom-menu,
-#custom-power {
-	border-radius: 4px;
-	margin: 6px 0px;
-	padding: 2px 8px;
-}
-
-#custom-menu {
-	background-color: #f5c2e7;
-	margin-left: 6px;
-	padding: 2px 6px;
-	font-size: 16px;
-}
-
-#custom-power {
-	background-color: #f38ba8;
-	margin-right: 6px;
-	padding: 2px 8px;
-	font-size: 16px;
-}
-
 /** Common style **/
 #backlight,
 #battery,
@@ -182,8 +159,24 @@ window#waybar.hidden {
 #idle_inhibitor,
 #tray,
 #pulseaudio,
-#network {
+#network,
+#custom-menu,
+#custom-power {
 	border-radius: 4px;
-	margin: 6px 0px;
-	padding: 2px 8px;
+	margin: 5px 0px;
+	padding: 0px 8px;
+}
+
+#custom-menu {
+	background-color: #f5c2e7;
+	margin-left: 5px;
+	margin-right: 10px;
+	font-size: 16px;
+}
+
+#custom-power {
+	background-color: #f38ba8;
+	margin-right: 5px;
+	margin-left: 10px;
+	font-size: 16px;
 }

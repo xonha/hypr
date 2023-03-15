@@ -71,12 +71,12 @@
     "custom/menu": {
         "format": "",
         "tooltip": false,
-        "on-click": "$HOME/.config/hypr/scripts/menu",
+        "on-click": "$HOME/.config/hypr/.scripts/menu",
     },
     "custom/power": {
         "format": "襤",
         "tooltip": false,
-        "on-click": "$HOME/.config/hypr/scripts/wlogout",
+        "on-click": "$HOME/.config/hypr/.scripts/wlogout",
     },
     // waybar-disk
     "disk": {

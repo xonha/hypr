@@ -26,16 +26,15 @@
         "disk"
     ],
     "modules-center": [
+        "clock",
         "idle_inhibitor",
-        "mpd",
-        "tray"
+        "tray",
     ],
     "modules-right": [
         "pulseaudio",
         "backlight",
         "network",
         "battery",
-        "clock",
         "custom/power"
     ],
 }

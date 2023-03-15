@@ -88,29 +88,6 @@
         "interval": 10,
         "format": " USED: {used:0.1f}G",
     },
-    // waybar-mpd
-    "mpd": {
-        "interval": 2,
-        "unknown-tag": "N/A",
-        "format": "{stateIcon} {artist} - {title}",
-        "format-disconnected": " Disconnected",
-        "format-paused": "{stateIcon} {artist} - {title}",
-        "format-stopped": "Stopped ",
-        "state-icons": {
-            "paused": "",
-            "playing": ""
-        },
-        "tooltip-format": "MPD (connected)",
-        "tooltip-format-disconnected": "MPD (disconnected)",
-        // Commands to execute on events
-        "on-click": "mpc toggle",
-        "on-click-middle": "mpc prev",
-        "on-click-right": "mpc next",
-        "on-update": "",
-        "on-scroll-up": "mpc seek +00:00:01",
-        "on-scroll-down": "mpc seek -00:00:01",
-        "smooth-scrolling-threshold": 1,
-    },
     // waybar-network
     "network": {
         "interval": 5,

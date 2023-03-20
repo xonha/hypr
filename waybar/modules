@@ -116,9 +116,8 @@
     },
     // waybar-pulseaudio
     "pulseaudio": {
-        //"format": "{volume}% {icon} {format_source}",
-        "format": "{icon} {volume}% {format_source}",
-        "format-bluetooth": " {volume}% {format_source}",
+        "format": "{format_source} {icon} {volume}%",
+        "format-bluetooth": "{format_source}  {volume}%",
         "format-muted": " Mute",
         "format-bluetooth-muted": " Mute",
         "format-source": " {volume}%",

@@ -15,26 +15,25 @@
     "margin": 0,
     "margin-top": 0,
     "margin-bottom": 0,
-    "margin-left": 0,
-    "margin-right": 0,
+    "margin-left": 10,
+    "margin-right": 10,
     "fixed-center": true,
     "ipc": true,
     "modules-left": [
-        "custom/menu",
         "cpu",
+        "temperature",
         "memory",
-        "disk"
+        "disk",
     ],
     "modules-center": [
-        "clock",
         "idle_inhibitor",
         "tray",
     ],
     "modules-right": [
-        "pulseaudio",
+        "battery",
         "backlight",
         "network",
-        "battery",
-        "custom/power"
+        "pulseaudio",
+        "clock",
     ],
 }

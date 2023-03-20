@@ -176,6 +176,6 @@ window#waybar.hidden {
 #custom-menu,
 #custom-power {
 	border-radius: 4px;
-	margin: 5px 0px;
+	margin-top: 5px;
 	padding: 0px 8px;
 }

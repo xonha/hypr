@@ -9,7 +9,7 @@
     "passthrough": false,
     "gtk-layer-shell": false,
     "position": "top",
-    "height": 32,
+    "height": 27,
     "width": "",
     "spacing": 6,
     "margin": 0,

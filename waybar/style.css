@@ -3,13 +3,13 @@
 /** ********** Fonts ********** **/
 * {
 	font-family: "JetBrains Mono", "Iosevka Nerd Font", archcraft, sans-serif;
-	font-size: 12px;
+	font-size: 14px;
+	font-weight: bolder;
 }
 
 /** ********** Waybar Window ********** **/
 window#waybar {
 	background-color: transparent;
-	color: @Crust;
 	transition-property: background-color;
 	transition-duration: .5s;
 }
@@ -18,14 +18,21 @@ window#waybar.hidden {
 	opacity: 0.5;
 }
 
+.modules-center,
+.modules-right,
+.modules-left {
+	background-color: @Base;
+	border-radius: 4px;
+}
+
 /** ********** Backlight ********** **/
 #backlight {
-	background-color: @Teal;
+	color: @Teal;
 }
 
 /** ********* Temperature ******** **/
 #temperature {
-	background-color: @Pink;
+	color: @Pink;
 }
 
 /** ********** Battery ********** **/
@@ -37,23 +44,23 @@ window#waybar.hidden {
 }
 
 #battery {
-	background-color: @Green;
+	color: @Green;
 }
 
 #battery.good {
-	background-color: @Yellow;
+	color: @Yellow;
 }
 
 #battery.warning {
-	background-color: @Peach;
+	color: @Peach;
 }
 
 #battery.low {
-	background-color: @Maroon;
+	color: @Maroon;
 }
 
 #battery.critical {
-	background-color: @Red;
+	color: @Red;
 	color: @Red;
 	animation-name: blink;
 	animation-duration: 0.5s;
@@ -64,38 +71,36 @@ window#waybar.hidden {
 
 /** ********** Clock ********** **/
 #clock {
-	background-color: @Lavender;
+	color: @Lavender;
 }
 
 /** ********** CPU ********** **/
 #cpu {
-	background-color: @Mauve;
+	color: @Mauve;
 }
 
 /** ********** Memory ********** **/
 #memory {
-	background-color: @Flamingo;
+	color: @Flamingo;
 }
 
 /** ********** Disk ********** **/
 #disk {
-	background-color: @Rosewater;
+	color: @Rosewater;
 }
 
 /** ***** Idle Inhibitor ***** **/
 #idle_inhibitor {
-	color: @Surface0;
-	background-color: @Subtext1;
+	color: @Text;
 }
 
 #idle_inhibitor.deactivated {
-	color: @Subtext1;
-	background-color: @Surface0;
+	color: @Surface2;
 }
 
 /** ********** Tray ********** **/
 #tray {
-	background-color: @Surface0;
+	color: @Surface0;
 }
 
 #tray>.passive {
@@ -110,45 +115,45 @@ window#waybar.hidden {
 
 /** ********** MPD ********** **/
 #mpd {
-	background-color: #94e2d5;
+	color: #94e2d5;
 }
 
 #mpd.disconnected {
-	background-color: @Red;
+	color: @Red;
 }
 
 #mpd.stopped {
-	background-color: #f5c2e7;
+	color: #f5c2e7;
 }
 
 #mpd.playing {
-	background-color: #74c7ec;
+	color: #74c7ec;
 }
 
 #mpd.paused {}
 
 /** ********** Pulseaudio ********** **/
 #pulseaudio {
-	background-color: @Blue;
+	color: @Blue;
 }
 
 #pulseaudio.bluetooth {
-	background-color: @Sapphire;
+	color: @Sapphire;
 }
 
 #pulseaudio.muted {
-	background-color: #313244;
+	color: #313244;
 	color: #cdd6f4;
 }
 
 /** ********** Network ********** **/
 #network {
-	background-color: @Sky;
+	color: @Sky;
 }
 
 #network.disconnected,
 #network.disabled {
-	background-color: #313244;
+	color: #313244;
 	color: #cdd6f4;
 }
 
@@ -176,6 +181,5 @@ window#waybar.hidden {
 #custom-menu,
 #custom-power {
 	border-radius: 4px;
-	margin-top: 5px;
 	padding: 0px 8px;
 }

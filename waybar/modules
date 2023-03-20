@@ -61,8 +61,8 @@
         "locale": "en_US.UTF-8",
         //"timezone": "America/New_York",
         "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>",
-        "format": "{:%a %d %b %I:%M}",
-        // "format-alt": " {:%a %b %d, %G}"
+        "format": "{: %a %d %b  %I:%M}",
+        // "format-alt": " {:%a %b %d, %G}": " {:%I:%M %p}",
     },
     "temperature": {
         // "thermal-zone": 2,

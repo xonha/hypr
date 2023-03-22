@@ -9,20 +9,14 @@
 
 /** ********** Waybar Window ********** **/
 window#waybar {
-	background-color: transparent;
+	background-color: @Base;
+	border-radius: 4px;
 	transition-property: background-color;
 	transition-duration: .5s;
 }
 
 window#waybar.hidden {
 	opacity: 0.5;
-}
-
-.modules-center,
-.modules-right,
-.modules-left {
-	background-color: @Base;
-	border-radius: 4px;
 }
 
 /** ********** Backlight ********** **/
@@ -33,40 +27,6 @@ window#waybar.hidden {
 /** ********* Temperature ******** **/
 #temperature {
 	color: @Pink;
-}
-
-/** ********** Battery ********** **/
-
-@keyframes blink {
-	to {
-		color: #000000;
-	}
-}
-
-#battery {
-	color: @Green;
-}
-
-#battery.good {
-	color: @Yellow;
-}
-
-#battery.warning {
-	color: @Peach;
-}
-
-#battery.low {
-	color: @Maroon;
-}
-
-#battery.critical {
-	color: @Red;
-	color: @Red;
-	animation-name: blink;
-	animation-duration: 0.5s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-	animation-direction: alternate;
 }
 
 /** ********** Clock ********** **/
@@ -113,25 +73,6 @@ window#waybar.hidden {
 
 #tray>.active {}
 
-/** ********** MPD ********** **/
-#mpd {
-	color: #94e2d5;
-}
-
-#mpd.disconnected {
-	color: @Red;
-}
-
-#mpd.stopped {
-	color: #f5c2e7;
-}
-
-#mpd.playing {
-	color: #74c7ec;
-}
-
-#mpd.paused {}
-
 /** ********** Pulseaudio ********** **/
 #pulseaudio {
 	color: @Blue;
@@ -141,11 +82,6 @@ window#waybar.hidden {
 	color: @Sapphire;
 }
 
-#pulseaudio.muted {
-	color: #313244;
-	color: #cdd6f4;
-}
-
 /** ********** Network ********** **/
 #network {
 	color: @Sky;
@@ -153,8 +89,7 @@ window#waybar.hidden {
 
 #network.disconnected,
 #network.disabled {
-	color: #313244;
-	color: #cdd6f4;
+	color: @Text;
 }
 
 #network.linked {}
@@ -162,6 +97,39 @@ window#waybar.hidden {
 #network.ethernet {}
 
 #network.wifi {}
+
+/** ********** Battery ********** **/
+@keyframes blink {
+	to {
+		color: @Crust;
+	}
+}
+
+#battery {
+	color: @Green;
+}
+
+#battery.good {
+	color: @Yellow;
+}
+
+#battery.warning {
+	color: @Peach;
+}
+
+#battery.low {
+	color: @Maroon;
+}
+
+#battery.critical {
+	color: @Red;
+	color: @Red;
+	animation-name: blink;
+	animation-duration: 0.5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
 
 /** ********** Custom ********** **/
 /** Common style **/

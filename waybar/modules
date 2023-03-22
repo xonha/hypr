@@ -32,9 +32,9 @@
         "design-capacity": false,
         "full-at": 100,
         "states": {
-            "good": 90,
-            "warning": 55,
-            "low": 20,
+            "good": 70,
+            "warning": 40,
+            "low": 25,
             "critical": 10,
         },
         "format": "{icon} {capacity}%",
@@ -118,10 +118,10 @@
     "pulseaudio": {
         "format": "{format_source} {icon} {volume}%",
         "format-bluetooth": "{format_source}  {volume}%",
-        "format-muted": " Mute",
-        "format-bluetooth-muted": " Mute",
+        "format-muted": "{format_source}  Mute",
+        "format-bluetooth-muted": "{format_source}  Mute",
         "format-source": " {volume}%",
-        "format-source-muted": "",
+        "format-source-muted": " Mute",
         "format-icons": {
             "headphone": "",
             "hands-free": "",

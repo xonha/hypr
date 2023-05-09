@@ -28,5 +28,5 @@ swaybg --output '*' --mode fill --image ~/.config/hypr/wallpapers/wallpaper.jpg 
 # Start network manager applet
 nm-applet --indicator &
 
-# Start mpd
-exec mpd &
+# Configure swappy
+cp ~/.config/hypr/swappy/config ~/.config/swappy &

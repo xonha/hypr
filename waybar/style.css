@@ -1,18 +1,16 @@
-/* 
- * Copyright (C) 2020-2022 Aditya Shakya <adi1090x@gmail.com>
-*/
+@import "styles/mocha.css";
 
 /** ********** Fonts ********** **/
 * {
 	font-family: "JetBrains Mono", "Iosevka Nerd Font", archcraft, sans-serif;
-	font-size: 12px;
+	font-size: 14px;
+	font-weight: bolder;
 }
 
 /** ********** Waybar Window ********** **/
 window#waybar {
-	background-color: #1e1e2e;
-	color: #1e1e2e;
-	border-bottom: 2px solid #313244;
+	background-color: @Base;
+	border-radius: 4px;
 	transition-property: background-color;
 	transition-duration: .5s;
 }
@@ -23,66 +21,46 @@ window#waybar.hidden {
 
 /** ********** Backlight ********** **/
 #backlight {
-	background-color: #cba6f7;
+	color: @Teal;
 }
 
-/** ********** Battery ********** **/
-#battery {
-	background-color: #f9e2af;
-}
-
-#battery.charging {}
-
-#battery.plugged {}
-
-@keyframes blink {
-	to {
-		color: #000000;
-	}
-}
-
-#battery.critical:not(.charging) {
-	background-color: #f38ba8;
-	color: #f38ba8;
-	animation-name: blink;
-	animation-duration: 0.5s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-	animation-direction: alternate;
+/** ********* Temperature ******** **/
+#temperature {
+	color: @Pink;
 }
 
 /** ********** Clock ********** **/
 #clock {
-	background-color: #a6e3a1;
+	color: @Lavender;
 }
 
 /** ********** CPU ********** **/
 #cpu {
-	background-color: #89dceb;
+	color: @Mauve;
 }
 
 /** ********** Memory ********** **/
 #memory {
-	background-color: #eba0ac;
+	color: @Flamingo;
 }
 
 /** ********** Disk ********** **/
 #disk {
-	background-color: #b4befe;
+	color: @Rosewater;
 }
 
 /** ***** Idle Inhibitor ***** **/
 #idle_inhibitor {
-	background-color: #ABE9B3;
+	color: @Text;
 }
 
 #idle_inhibitor.deactivated {
-	background-color: #F28FAD;
+	color: @Surface2;
 }
 
 /** ********** Tray ********** **/
 #tray {
-	background-color: #3C3C44;
+	color: @Surface0;
 }
 
 #tray>.passive {
@@ -95,48 +73,23 @@ window#waybar.hidden {
 
 #tray>.active {}
 
-/** ********** MPD ********** **/
-#mpd {
-	background-color: #94e2d5;
-}
-
-#mpd.disconnected {
-	background-color: #f38ba8;
-}
-
-#mpd.stopped {
-	background-color: #f5c2e7;
-}
-
-#mpd.playing {
-	background-color: #74c7ec;
-}
-
-#mpd.paused {}
-
 /** ********** Pulseaudio ********** **/
 #pulseaudio {
-	background-color: #fab387;
+	color: @Blue;
 }
 
 #pulseaudio.bluetooth {
-	background-color: #f5c2e7;
-}
-
-#pulseaudio.muted {
-	background-color: #313244;
-	color: #cdd6f4;
+	color: @Sapphire;
 }
 
 /** ********** Network ********** **/
 #network {
-	background-color: #89b4fa;
+	color: @Sky;
 }
 
 #network.disconnected,
 #network.disabled {
-	background-color: #313244;
-	color: #cdd6f4;
+	color: @Text;
 }
 
 #network.linked {}
@@ -145,28 +98,40 @@ window#waybar.hidden {
 
 #network.wifi {}
 
+/** ********** Battery ********** **/
+@keyframes blink {
+	to {
+		color: @Crust;
+	}
+}
+
+#battery {
+	color: @Green;
+}
+
+#battery.good {
+	color: @Yellow;
+}
+
+#battery.warning {
+	color: @Peach;
+}
+
+#battery.low {
+	color: @Maroon;
+}
+
+#battery.critical {
+	color: @Red;
+	color: @Red;
+	animation-name: blink;
+	animation-duration: 0.5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
 /** ********** Custom ********** **/
-#custom-menu,
-#custom-power {
-	border-radius: 4px;
-	margin: 6px 0px;
-	padding: 2px 8px;
-}
-
-#custom-menu {
-	background-color: #f5c2e7;
-	margin-left: 6px;
-	padding: 2px 6px;
-	font-size: 16px;
-}
-
-#custom-power {
-	background-color: #f38ba8;
-	margin-right: 6px;
-	padding: 2px 8px;
-	font-size: 16px;
-}
-
 /** Common style **/
 #backlight,
 #battery,
@@ -179,8 +144,10 @@ window#waybar.hidden {
 #idle_inhibitor,
 #tray,
 #pulseaudio,
-#network {
+#temperature,
+#network,
+#custom-menu,
+#custom-power {
 	border-radius: 4px;
-	margin: 6px 0px;
-	padding: 2px 8px;
+	padding: 0px 8px;
 }

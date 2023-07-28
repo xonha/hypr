@@ -9,33 +9,31 @@
     "passthrough": false,
     "gtk-layer-shell": false,
     "position": "top",
-    "height": 32,
+    "height": 27,
     "width": "",
-    "spacing": 6,
+    "spacing": 0,
     "margin": 0,
-    "margin-top": 0,
+    "margin-top": 5,
     "margin-bottom": 0,
-    "margin-left": 0,
-    "margin-right": 0,
+    "margin-left": 10,
+    "margin-right": 10,
     "fixed-center": true,
     "ipc": true,
     "modules-left": [
-        "custom/menu",
         "cpu",
+        "temperature",
         "memory",
-        "disk"
+        "disk",
     ],
     "modules-center": [
         "idle_inhibitor",
-        "mpd",
-        "tray"
+        "tray",
     ],
     "modules-right": [
-        "pulseaudio",
+        "battery",
         "backlight",
         "network",
-        "battery",
+        "pulseaudio",
         "clock",
-        "custom/power"
     ],
 }

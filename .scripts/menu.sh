@@ -3,7 +3,7 @@
 ## launch wofi with alt config
 
 DIR="$HOME/.config/hypr/wofi"
-CONFIG="$DIR/config"
+CONFIG="$DIR/config.conf"
 STYLE="$DIR/style.css"
 COLORS="$DIR/colors"
 

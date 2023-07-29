@@ -28,11 +28,11 @@ swaybg --output '*' --mode fill --image ~/.config/hypr/wallpapers/wallpaper.jpg 
 # Start network manager applet
 nm-applet --indicator &
 
+# Configure guake
+guake --restore-preferences ~/.config/hypr/guake/config.conf &
+
 # Configure swappy
-cp ~/.config/hypr/swappy/config ~/.config/swappy &
+cp ~/.config/hypr/swappy/config ~/.config/swappy.conf &
 
 # Configure fish
 cp -R ~/.config/hypr/fish ~/.config/fish &
-
-# Configure guake
-guake --restore-preferences ~/.config/hypr/guake/config.conf &

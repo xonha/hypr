@@ -3,7 +3,7 @@
 ## launch waybar with alt config
 
 DIR="$HOME/.config/hypr/waybar"
-CONFIG="$DIR/config"
+CONFIG="$DIR/config.jsonc"
 STYLE="$DIR/style.css"
 
 trap "killall waybar" EXIT

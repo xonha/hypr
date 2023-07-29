@@ -18,6 +18,9 @@
 - nemo-audio-tab
 - light
 - xfce-polkit
+- kitty
+- guake
+- fish
 
 
 ## Apps

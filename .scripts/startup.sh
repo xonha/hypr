@@ -17,13 +17,13 @@ done
 swaybg --output '*' --mode fill --image ~/.config/hypr/wallpapers/wallpaper.jpg &
 
 # Apply themes
-~/.config/hypr/.scripts/gtkthemes &
+~/.config/hypr/.scripts/gtkthemes.sh &
 
 # Lauch notification daemon (mako)
-~/.config/hypr/.scripts/notifications &
+~/.config/hypr/.scripts/notifications.sh &
 
 # Lauch statusbar (waybar)
-~/.config/hypr/.scripts/statusbar &
+~/.config/hypr/.scripts/statusbar.sh &
 
 # Start network manager applet
 nm-applet --indicator &

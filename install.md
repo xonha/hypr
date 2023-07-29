@@ -28,6 +28,7 @@
 ### AUR
 - google-chrome
 - keeweb-desktop-bin
+- visual-studio-code-bin
 
 # Uninstall
 - archcraft-neofetch

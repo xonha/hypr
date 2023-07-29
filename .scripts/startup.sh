@@ -30,3 +30,6 @@ nm-applet --indicator &
 
 # Configure swappy
 cp ~/.config/hypr/swappy/config ~/.config/swappy &
+
+# Configure fish
+cp -R ~/.config/hypr/fish ~/.config/fish &

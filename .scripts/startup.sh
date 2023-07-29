@@ -33,3 +33,6 @@ cp ~/.config/hypr/swappy/config ~/.config/swappy &
 
 # Configure fish
 cp -R ~/.config/hypr/fish ~/.config/fish &
+
+# Configure guake
+guake --restore-preferences ~/.config/hypr/guake/config.conf &

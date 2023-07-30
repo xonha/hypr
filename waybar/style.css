@@ -5,6 +5,8 @@
 	font-family: "JetBrains Mono", "Iosevka Nerd Font", archcraft, sans-serif;
 	font-size: 14px;
 	font-weight: bolder;
+	border-radius: 4px;
+	padding: 0px 2px;
 }
 
 /** ********** Waybar Window ********** **/

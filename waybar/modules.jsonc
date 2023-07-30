@@ -1,5 +1,21 @@
 // Waybar modules configuration
 {
+    // waybar-workspaces
+    "wlr/workspaces": {
+        "format": "{icon}",
+        "on-click": "activate",
+        "format-icons": {
+            "1": "",
+            "2": "",
+            // "3": "",
+            "8": "󰑆",
+            "9": "󰙯",
+            "active": "",
+            // "urgent": "",
+            // "default": ""
+        },
+        "sort-by-number": true
+    },
     // waybar-backlight
     "backlight": {
         "interval": 2,

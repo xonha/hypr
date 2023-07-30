@@ -33,6 +33,7 @@ packages=(
     wofi
     wget
     waybar
+    aur/wdisplays
     xfce-polkit
     python-virtualenv
     python38

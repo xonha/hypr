@@ -26,7 +26,7 @@
         "disk",
     ],
     "modules-center": [
-        // "idle_inhibitor",
+        "wlr/workspaces",
         "tray",
     ],
     "modules-right": [

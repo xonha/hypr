@@ -12,7 +12,6 @@
 /** ********** Waybar Window ********** **/
 window#waybar {
 	background-color: @Base;
-	border-radius: 4px;
 	transition-property: background-color;
 	transition-duration: .5s;
 }
@@ -154,6 +153,5 @@ window#waybar.hidden {
 #network,
 #custom-menu,
 #custom-power {
-	border-radius: 4px;
 	padding: 0px 8px;
 }

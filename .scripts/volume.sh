@@ -2,7 +2,7 @@
 
 ## Script To Manage Speaker Volume For Archcraft (in Wayland).
 
-iDIR="$HOME/.config/hypr/mako/icons"
+DIR="$HOME/.config/hypr/mako/icons"
 notify_cmd='notify-send -h string:x-canonical-private-synchronous:sys-notify-volume -u low'
 
 # Get Volume
@@ -14,13 +14,13 @@ get_volume() {
 get_icon() {
 	current="$(get_volume)"
 	if [[ "$current" -eq "0" ]]; then
-		icon="$iDIR/volume-mute.png"
+		icon="$DIR/volume-mute.png"
 	elif [[ ("$current" -ge "0") && ("$current" -le "30") ]]; then
-		icon="$iDIR/volume-low.png"
+		icon="$DIR/volume-low.png"
 	elif [[ ("$current" -ge "30") && ("$current" -le "60") ]]; then
-		icon="$iDIR/volume-mid.png"
+		icon="$DIR/volume-mid.png"
 	elif [[ ("$current" -ge "60") && ("$current" -le "100") ]]; then
-		icon="$iDIR/volume-high.png"
+		icon="$DIR/volume-high.png"
 	fi
 }
 
@@ -44,7 +44,7 @@ dec_volume() {
 # Toggle Mute
 toggle_mute() {
 	if [[ `pulsemixer --get-mute` == 0 ]]; then
-		pulsemixer --toggle-mute && ${notify_cmd} -i "$iDIR/volume-mute.png" "Mute"
+		pulsemixer --toggle-mute && ${notify_cmd} -i "$DIR/volume-mute.png" "Mute"
 	else
 		pulsemixer --toggle-mute && get_icon && ${notify_cmd} -i "$icon" "Unmute"
 	fi
@@ -54,9 +54,9 @@ toggle_mute() {
 toggle_mic() {
 	ID="`pulsemixer --list-sources | grep 'Default' | cut -d',' -f1 | cut -d' ' -f3`"
 	if [[ `pulsemixer --id $ID --get-mute` == 0 ]]; then
-		pulsemixer --id ${ID} --toggle-mute && ${notify_cmd} -i "$iDIR/microphone-mute.png" "Microphone Switched OFF"
+		pulsemixer --id ${ID} --toggle-mute
 	else
-		pulsemixer --id ${ID} --toggle-mute && ${notify_cmd} -i "$iDIR/microphone.png" "Microphone Switched ON"
+		pulsemixer --id ${ID} --toggle-mute
 	fi
 }
 

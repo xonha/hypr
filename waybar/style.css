@@ -78,8 +78,12 @@ window#waybar.hidden {
 	color: @Blue;
 }
 
-#pulseaudio.bluetooth {
-	color: @Sapphire;
+#pulseaudio.muted {
+	color: @Peach;
+}
+
+#pulseaudio.source-muted {
+	color: @Red;
 }
 
 /** ********** Network ********** **/

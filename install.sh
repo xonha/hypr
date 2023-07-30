@@ -34,6 +34,10 @@ packages=(
     wget
     waybar
     xfce-polkit
+    python-virtualenv
+    python38
+    python39
+    python310
 )
 
 # Install packages using yay with --noconfirm option

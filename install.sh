@@ -40,6 +40,9 @@ packages=(
     python310
 )
 
+# Update the system before installing packages
+yay -Syu --noconfirm
+
 # Install packages using yay with --noconfirm option
 yay -S --noconfirm "${packages[@]}"
 

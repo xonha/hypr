@@ -34,7 +34,7 @@ packages=(
     nitrogen
     galculator
     atril
-    zsh
+    firefox
 )
 
 # Loop through the packages and uninstall them one by one

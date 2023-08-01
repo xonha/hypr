@@ -3,8 +3,8 @@
 ## launch wofi with alt config
 
 DIR="$HOME/.config/hypr/wofi"
+CONFIG="$DIR/config.conf"
 STYLE="$DIR/style.css"
-CONFIG="$DIR/config"
 COLORS="$DIR/colors"
 
 trap "killall wofi" EXIT

@@ -3,14 +3,14 @@
 ## Wofi Powermenu
 
 ## Files
-CONFIG="$HOME/.config/hypr/wofi/config"
+CONFIG="$HOME/.config/hypr/wofi/config.conf"
 STYLE="$HOME/.config/hypr/wofi/style.css"
 COLORS="$HOME/.config/hypr/wofi/colors"
 
 ## Wofi Command
 wofi_command="wofi --show dmenu \
 --conf ${CONFIG} --style ${STYLE} --color ${COLORS} \
---width=300 --height=250 \
+--width=100 --height=210 \
 --cache-file=/dev/null \
 --hide-scroll --no-actions \
 --define=matching=fuzzy"

@@ -48,7 +48,7 @@ yay -Syu --noconfirm
 yay -S --noconfirm "${packages[@]}"
 
 # Apply the Papirus-Dark theme to Papirus-Folders
-papirus-folders -C cat-mocha-peach --theme Papirus-Dark
+papirus-folders -C cat-mocha-mauve --theme Papirus-Dark
 
 # Install Discord Screenshare Linux script
 bash -c "$(curl https://raw.githubusercontent.com/fuwwy/Discord-Screenshare-Linux/main/scripts/install.sh -sSfL)"

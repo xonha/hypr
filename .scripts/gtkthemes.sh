@@ -9,7 +9,7 @@ CURSOR='Qogirr-Dark'
 
 SCHEMA='gsettings set org.gnome.desktop.interface'
 
-apply_themes () {
+apply_themes() {
   ${SCHEMA} gtk-theme "$THEME"
   ${SCHEMA} icon-theme "$ICONS"
   ${SCHEMA} cursor-theme "$CURSOR"

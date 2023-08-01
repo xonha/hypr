@@ -10,7 +10,7 @@ COLORS="$DIR/colors"
 trap "killall wofi" EXIT
 
 while true; do
-    if [[ ! `pidof wofi` ]]; then
+    if [[ ! $(pidof wofi) ]]; then
         wofi --show drun --prompt 'Search...' --conf ${CONFIG} --style ${STYLE} --color ${COLORS}
     else
         pkill wofi

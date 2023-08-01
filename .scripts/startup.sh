@@ -5,7 +5,7 @@
 # Kill already running process
 _ps=(waybar mako mpd xfce-polkit)
 for _prs in "${_ps[@]}"; do
-  if [[ `pidof ${_prs}` ]]; then
+  if [[ $(pidof ${_prs}) ]]; then
     killall -9 ${_prs}
   fi
 done

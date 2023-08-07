@@ -41,11 +41,8 @@ packages=(
     python310
 )
 
-# Update the system before installing packages
-yay -Syu --noconfirm
-
 # Install packages using yay with --noconfirm option
-yay -S --noconfirm "${packages[@]}"
+yay -Syu --needed --noconfirm "${packages[@]}"guake --save-preferences config.conf 
 
 # Apply the Papirus-Dark theme to Papirus-Folders
 papirus-folders -C cat-mocha-mauve --theme Papirus-Dark

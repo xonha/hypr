@@ -3,7 +3,7 @@
 # List of packages to install
 packages=(
     catppuccin-gtk-theme-mocha
-    discord
+    webcord
     fish
     github-cli
     google-chrome
@@ -24,6 +24,9 @@ packages=(
     neovim
     papirus-folders-catppuccin-git
     qalculate-gtk
+    pipewire
+    pipewire-pulse
+    xdg-desktop-portal-wlr
     slurp
     stremio
     swaybg
@@ -42,10 +45,7 @@ packages=(
 )
 
 # Install packages using yay with --noconfirm option
-yay -Syu --needed --noconfirm "${packages[@]}"guake --save-preferences config.conf 
+yay -Syu --needed --noconfirm "${packages[@]}"
 
 # Apply the Papirus-Dark theme to Papirus-Folders
 papirus-folders -C cat-mocha-mauve --theme Papirus-Dark
-
-# Install Discord Screenshare Linux script
-bash -c "$(curl https://raw.githubusercontent.com/fuwwy/Discord-Screenshare-Linux/main/scripts/install.sh -sSfL)"

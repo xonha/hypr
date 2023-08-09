@@ -8,6 +8,7 @@
             "1": "",
             "2": "",
             // "3": "",
+            "7": "󰎆",
             "8": "󰑆",
             "9": "󰙯",
             "active": "",
@@ -143,12 +144,13 @@
     "network": {
         "interval": 5,
         //"interface": "wlan*", // (Optional) To force the use of this interface, set it for netspeed to work
-        "format-wifi": " {essid}",
+        "format-wifi": " Wifi",
         "format-ethernet": " Wired",
         "format-linked": " {ifname} (No IP)",
         "format-disconnected": "睊 Disconnected",
         "format-disabled": "睊 Disabled",
-        "format-alt": " {bandwidthUpBits} |  {bandwidthDownBits}",
+        "format-alt": " {essid}",
+        // "format-alt": " {bandwidthUpBits} |  {bandwidthDownBits}",
         "tooltip-format": " {ifname} via {gwaddr}",
     },
     // waybar-pulseaudio
@@ -176,7 +178,7 @@
         // Commands to execute on events
         "on-click": "pulsemixer --toggle-mute",
         "on-click-right": "pavucontrol",
-        "smooth-scrolling-threshold": 1,
+        "smooth-scrolling-threshold": 1.0,
     },
     // waybar-idle-inhibitor
     "idle_inhibitor": {
@@ -189,8 +191,8 @@
     },
     // waybar-tray
     "tray": {
-        "icon-size": 16,
-        "spacing": 10,
+        "icon-size": 14,
+        "spacing": 6,
         "reverse-direction": true,
     }
 }

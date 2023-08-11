@@ -23,17 +23,17 @@
         "cpu",
         "temperature",
         "memory",
-        "disk",
+        "disk"
     ],
     "modules-center": [
         "wlr/workspaces",
-        "tray",
+        "tray"
     ],
     "modules-right": [
         "battery",
         "backlight",
         "network",
         "pulseaudio",
-        "clock",
-    ],
+        "clock"
+    ]
 }

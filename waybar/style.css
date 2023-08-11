@@ -2,138 +2,142 @@
 
 /** ********** Fonts ********** **/
 * {
-	font-family: "JetBrains Mono", "Iosevka Nerd Font", archcraft, sans-serif;
-	font-size: 14px;
-	font-weight: bolder;
-	border-radius: 4px;
-	padding: 0px 2px;
+  font-family: "JetBrains Mono", "Iosevka Nerd Font", archcraft, sans-serif;
+  font-size: 14px;
+  font-weight: bolder;
+  border-radius: 4px;
+  padding: 0px 2px;
 }
 
 /** ********** Waybar Window ********** **/
 window#waybar {
-	background-color: @Base;
-	transition-property: background-color;
-	transition-duration: .5s;
+  background-color: @Base;
+  transition-property: background-color;
+  transition-duration: 0.5s;
 }
 
 window#waybar.hidden {
-	opacity: 0.5;
+  opacity: 0.5;
 }
 
 /** ********** Backlight ********** **/
 #backlight {
-	color: @Teal;
+  color: @Teal;
 }
 
 /** ********* Temperature ******** **/
 #temperature {
-	color: @Pink;
+  color: @Pink;
 }
 
 /** ********** Clock ********** **/
 #clock {
-	color: @Lavender;
+  color: @Lavender;
 }
 
 /** ********** CPU ********** **/
 #cpu {
-	color: @Mauve;
+  color: @Mauve;
 }
 
 /** ********** Memory ********** **/
 #memory {
-	color: @Flamingo;
+  color: @Flamingo;
 }
 
 /** ********** Disk ********** **/
 #disk {
-	color: @Rosewater;
+  color: @Rosewater;
 }
 
 /** ***** Idle Inhibitor ***** **/
 #idle_inhibitor {
-	color: @Text;
+  color: @Text;
 }
 
 #idle_inhibitor.deactivated {
-	color: @Surface2;
+  color: @Surface2;
 }
 
 /** ********** Tray ********** **/
 #tray {
-	color: @Surface0;
+  color: @Surface0;
 }
 
-#tray>.passive {
-	-gtk-icon-effect: dim;
+#tray > .passive {
+  -gtk-icon-effect: dim;
 }
 
-#tray>.needs-attention {
-	-gtk-icon-effect: highlight;
+#tray > .needs-attention {
+  -gtk-icon-effect: highlight;
 }
 
-#tray>.active {}
+#tray > .active {
+}
 
 /** ********** Pulseaudio ********** **/
 #pulseaudio {
-	color: @Blue;
+  color: @Blue;
 }
 
 #pulseaudio.muted {
-	color: @Peach;
+  color: @Peach;
 }
 
 #pulseaudio.source-muted {
-	color: @Red;
+  color: @Red;
 }
 
 /** ********** Network ********** **/
 #network {
-	color: @Sky;
+  color: @Sky;
 }
 
 #network.disconnected,
 #network.disabled {
-	color: @Text;
+  color: @Text;
 }
 
-#network.linked {}
+#network.linked {
+}
 
-#network.ethernet {}
+#network.ethernet {
+}
 
-#network.wifi {}
+#network.wifi {
+}
 
 /** ********** Battery ********** **/
 @keyframes blink {
-	to {
-		color: @Crust;
-	}
+  to {
+    color: @Crust;
+  }
 }
 
 #battery {
-	color: @Green;
+  color: @Green;
 }
 
 #battery.good {
-	color: @Yellow;
+  color: @Yellow;
 }
 
 #battery.warning {
-	color: @Peach;
+  color: @Peach;
 }
 
 #battery.low {
-	color: @Maroon;
+  color: @Maroon;
 }
 
 #battery.critical {
-	color: @Red;
-	color: @Red;
-	animation-name: blink;
-	animation-duration: 0.5s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-	animation-direction: alternate;
+  color: @Red;
+  color: @Red;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 /** ********** Custom ********** **/
@@ -153,5 +157,5 @@ window#waybar.hidden {
 #network,
 #custom-menu,
 #custom-power {
-	padding: 0px 8px;
+  padding: 0px 8px;
 }

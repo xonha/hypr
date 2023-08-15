@@ -4,7 +4,7 @@
 
 THEME='Catppuccin-Mocha-Standard-Mauve-Dark'
 ICONS='Papirus-Dark'
-FONT='JetBrains Mono 10'
+FONT='JetBrainsMono Nerd Font Bold 10'
 CURSOR='Qogirr-Dark'
 
 SCHEMA='gsettings set org.gnome.desktop.interface'

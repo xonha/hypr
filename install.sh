@@ -36,6 +36,7 @@ packages=(
     wofi
     wget
     waybar
+    noisetorch
     aur/wdisplays
     xfce-polkit
     python-virtualenv

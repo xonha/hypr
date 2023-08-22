@@ -36,13 +36,7 @@ packages=(
     atril
     firefox
     network-manager-applet
-    network-manager-sstp
     networkmanager-dmenu-git
-    networkmanager-openvpn
-    networkmanager-pptp
-    networkmanager-openconnect
-    networkmanager-vpnc
-    networkmanager-strongswan
     thunar-volman
     thunar-media-tags-plugin
     thunar-archive-plugin

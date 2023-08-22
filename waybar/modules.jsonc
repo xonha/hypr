@@ -7,7 +7,7 @@
     "format-icons": {
       "1": "",
       "2": "󰨞",
-      // "3": "",
+      "3": "",
       // "7": "󰎆",
       "8": "",
       "9": "󰙯",
@@ -149,9 +149,10 @@
     "format-linked": " {ifname} (No IP)",
     "format-disconnected": "睊 Disconnected",
     "format-disabled": "睊 Disabled",
-    "format-alt": " {essid}",
-    // "format-alt": " {bandwidthUpBits} |  {bandwidthDownBits}",
-    "tooltip-format": " {ifname} via {gwaddr}"
+    // "format-alt": " {essid}",
+    "format-alt": "{essid}  {bandwidthUpBits} |  {bandwidthDownBits}",
+    "tooltip-format": " {ifname} via {gwaddr}",
+    "on-click-right": "nm-connection-editor"
   },
   // waybar-pulseaudio
   "pulseaudio": {

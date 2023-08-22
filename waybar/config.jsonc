@@ -20,20 +20,20 @@
     "fixed-center": true,
     "ipc": true,
     "modules-left": [
-        "cpu",
-        "temperature",
-        "memory",
-        "disk"
+        "clock",
+        "pulseaudio",
+        "network",
+        "backlight",
+        "battery"
     ],
     "modules-center": [
         "wlr/workspaces",
         "tray"
     ],
     "modules-right": [
-        "battery",
-        "backlight",
-        "network",
-        "pulseaudio",
-        "clock"
+        "disk",
+        "memory",
+        "temperature",
+        "cpu"
     ]
 }

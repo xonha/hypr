@@ -7,6 +7,7 @@
   font-weight: bolder;
   border-radius: 4px;
   padding: 0px 2px;
+  color: @Rosewater;
 }
 
 /** ********** Waybar Window ********** **/
@@ -27,27 +28,28 @@ window#waybar.hidden {
 
 /** ********* Temperature ******** **/
 #temperature {
-  color: @Pink;
+  color: @Mauve;
 }
 
 /** ********** Clock ********** **/
 #clock {
-  color: @Lavender;
+  color: @Blue;
+  /* color: @Lavender; */
 }
 
 /** ********** CPU ********** **/
 #cpu {
-  color: @Mauve;
+  color: @Lavender;
 }
 
 /** ********** Memory ********** **/
 #memory {
-  color: @Flamingo;
+  color: @Pink;
 }
 
 /** ********** Disk ********** **/
 #disk {
-  color: @Rosewater;
+  color: @Flamingo;
 }
 
 /** ***** Idle Inhibitor ***** **/
@@ -77,7 +79,7 @@ window#waybar.hidden {
 
 /** ********** Pulseaudio ********** **/
 #pulseaudio {
-  color: @Blue;
+  color: @Sapphire;
 }
 
 #pulseaudio.muted {

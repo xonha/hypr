@@ -27,7 +27,7 @@
         "battery"
     ],
     "modules-center": [
-        "wlr/workspaces",
+        "hyprland/workspaces",
         "tray"
     ],
     "modules-right": [

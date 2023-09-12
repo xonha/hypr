@@ -37,6 +37,7 @@ packages=(
     wget
     waybar
     noisetorch
+    mailspring
     aur/wdisplays
     xfce-polkit
     python-virtualenv

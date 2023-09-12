@@ -38,6 +38,7 @@ packages=(
     waybar
     noisetorch
     mailspring
+    kooha
     aur/wdisplays
     xfce-polkit
     python-virtualenv

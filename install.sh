@@ -41,6 +41,7 @@ packages=(
     kooha
     aur/wdisplays
     xfce-polkit
+    wl-clipboard
     python-virtualenv
     python38
     python39

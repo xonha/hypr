@@ -34,7 +34,6 @@ window#waybar.hidden {
 /** ********** Clock ********** **/
 #clock {
   color: @Blue;
-  /* color: @Lavender; */
 }
 
 /** ********** CPU ********** **/

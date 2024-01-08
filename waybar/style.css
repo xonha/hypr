@@ -30,32 +30,32 @@ window#waybar.hidden {
 
 /** ********** Backlight ********** **/
 #backlight {
-  color: @Teal;
+  color: @Sapphire;
 }
 
 /** ********* Temperature ******** **/
 #temperature {
-  color: @Mauve;
+  color: @Red;
 }
 
 /** ********** Clock ********** **/
 #clock {
-  color: @Blue;
+  color: @Mauve;
 }
 
 /** ********** CPU ********** **/
 #cpu {
-  color: @Lavender;
+  color: @Maroon;
 }
 
 /** ********** Memory ********** **/
 #memory {
-  color: @Pink;
+  color: @Peach;
 }
 
 /** ********** Disk ********** **/
 #disk {
-  color: @Flamingo;
+  color: @Pink;
 }
 
 /** ***** Idle Inhibitor ***** **/
@@ -83,17 +83,23 @@ window#waybar.hidden {
 #tray > .active {
 }
 
+#custom-wl-gammarelay-temperature {
+  color: @Blue;
+}
+#custom-wl-gammarelay-brightness {
+  color: @Sapphire;
+}
 /** ********** Pulseaudio ********** **/
 #pulseaudio {
-  color: @Sapphire;
+  color: @Lavender;
 }
 
 #pulseaudio.muted {
-  color: @Peach;
+  color: @Subtext1;
 }
 
 #pulseaudio.source-muted {
-  color: @Red;
+  color: @Overlay0;
 }
 
 /** ********** Network ********** **/

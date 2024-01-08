@@ -5,7 +5,7 @@
     "format": "{icon}",
     "on-click": "activate",
     "format-icons": {
-      "1": "",
+      "1": "",
       "2": "󰨞",
       // "3": "",
       "3": "3",
@@ -20,6 +20,34 @@
       // "default": ""
     },
     "sort-by-number": true
+  },
+  "custom/wl-gammarelay-temperature": {
+    "format": " {}K ",
+    "exec": "wl-gammarelay-rs watch {t}",
+    "on-click": "busctl --user set-property rs.wl-gammarelay / rs.wl.gammarelay Temperature q 4500",
+    "on-click-right": "busctl --user set-property rs.wl-gammarelay / rs.wl.gammarelay Temperature q 6500",
+    "on-scroll-up": "busctl --user -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateTemperature n +100",
+    "on-scroll-down": "busctl --user -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateTemperature n -100"
+  },
+  "custom/wl-gammarelay-brightness": {
+    "format": " {}%",
+    "exec": "wl-gammarelay-rs watch {bp}",
+    "on-click": "busctl --user set-property rs.wl-gammarelay / rs.wl.gammarelay Brightness d 0.6",
+    "on-click-right": "busctl --user set-property rs.wl-gammarelay / rs.wl.gammarelay Brightness d 1",
+    "on-scroll-up": "busctl --user -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateBrightness d +0.05",
+    "on-scroll-down": "busctl --user -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateBrightness d -0.05"
+  },
+  "keyboard-state": {
+    "numlock": true,
+    "capslock": true,
+    "format": {
+      "numlock": "N {icon}",
+      "capslock": "C {icon}"
+    },
+    "format-icons": {
+      "locked": "",
+      "unlocked": ""
+    }
   },
   // waybar-backlight
   "backlight": {
@@ -160,10 +188,10 @@
   },
   // waybar-pulseaudio
   "pulseaudio": {
-    "format": "{format_source} {icon} {volume}%",
-    "format-bluetooth": "{format_source}  {volume}%",
-    "format-muted": "{format_source}  Mute",
-    "format-bluetooth-muted": "{format_source}  Mute",
+    "format": "{icon} {volume}% {format_source}",
+    "format-bluetooth": " {volume}% {format_source}",
+    "format-muted": " Mute {format_source}",
+    "format-bluetooth-muted": " Mute {format_source}",
     "format-source": "󰍬 {volume}%",
     "format-source-muted": "󰍭 Mute",
     "format-icons": {
@@ -182,7 +210,8 @@
     "scroll-step": 5.0,
     // Commands to execute on events
     "on-click": "pulsemixer --toggle-mute",
-    "on-click-right": "pavucontrol",
+    "on-click-right": "~/.config/hypr/.scripts/volume.sh --toggle-mic",
+    "on-click-middle": "pavucontrol",
     "smooth-scrolling-threshold": 1.0
   },
   // waybar-idle-inhibitor

@@ -22,8 +22,10 @@
     "modules-left": [
         "clock",
         "pulseaudio",
-        "network",
+        "custom/wl-gammarelay-temperature",
+        "custom/wl-gammarelay-brightness",
         "backlight",
+        "network",
         "battery"
     ],
     "modules-center": [
@@ -33,7 +35,7 @@
     "modules-right": [
         "disk",
         "memory",
-        "temperature",
-        "cpu"
+        "cpu",
+        "temperature"
     ]
 }

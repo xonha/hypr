@@ -21,9 +21,10 @@
     "ipc": true,
     "modules-left": [
         "clock",
-        "pulseaudio",
-        "custom/wl-gammarelay-temperature",
-        "custom/wl-gammarelay-brightness",
+        "pulseaudio#input",
+        "pulseaudio#output",
+        "custom/display-temperature",
+        "custom/display-brightness",
         "backlight",
         "network",
         "battery"

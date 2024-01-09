@@ -14,7 +14,7 @@
   color: @Overlay0;
 }
 #workspaces button.visible {
-  color: @Rosewater;
+  color: @Text;
 }
 
 /** ********** Waybar Window ********** **/
@@ -30,7 +30,7 @@ window#waybar.hidden {
 
 /** ********** Backlight ********** **/
 #backlight {
-  color: @Sapphire;
+  color: @Sky;
 }
 
 /** ********* Temperature ******** **/
@@ -55,7 +55,7 @@ window#waybar.hidden {
 
 /** ********** Disk ********** **/
 #disk {
-  color: @Pink;
+  color: @Yellow;
 }
 
 /** ***** Idle Inhibitor ***** **/
@@ -83,28 +83,27 @@ window#waybar.hidden {
 #tray > .active {
 }
 
-#custom-wl-gammarelay-temperature {
-  color: @Blue;
-}
-#custom-wl-gammarelay-brightness {
+#custom-display-temperature {
   color: @Sapphire;
 }
+#custom-display-brightness {
+  color: @Sky;
+}
+
 /** ********** Pulseaudio ********** **/
-#pulseaudio {
+#pulseaudio.input {
   color: @Lavender;
 }
-
-#pulseaudio.muted {
-  color: @Subtext1;
+#pulseaudio.output {
+  color: @Blue;
 }
-
-#pulseaudio.source-muted {
-  color: @Overlay0;
+#pulseaudio.input.muted, #pulseaudio.output.source-muted {
+  color: @Overlay1;
 }
 
 /** ********** Network ********** **/
 #network {
-  color: @Sky;
+  color: @Teal;
 }
 
 #network.disconnected,
@@ -170,6 +169,8 @@ window#waybar.hidden {
 #temperature,
 #network,
 #custom-menu,
-#custom-power {
+#custom-power,
+#custom-display-temperature,
+#custom-display-brightness{
   padding: 0px 8px;
 }

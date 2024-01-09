@@ -21,15 +21,15 @@
     },
     "sort-by-number": true
   },
-  "custom/wl-gammarelay-temperature": {
-    "format": " {}K ",
+  "custom/display-temperature": {
+    "format": " {}K",
     "exec": "wl-gammarelay-rs watch {t}",
     "on-click": "busctl --user set-property rs.wl-gammarelay / rs.wl.gammarelay Temperature q 4500",
     "on-click-right": "busctl --user set-property rs.wl-gammarelay / rs.wl.gammarelay Temperature q 6500",
     "on-scroll-up": "busctl --user -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateTemperature n +100",
     "on-scroll-down": "busctl --user -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateTemperature n -100"
   },
-  "custom/wl-gammarelay-brightness": {
+  "custom/display-brightness": {
     "format": " {}%",
     "exec": "wl-gammarelay-rs watch {bp}",
     "on-click": "busctl --user set-property rs.wl-gammarelay / rs.wl.gammarelay Brightness d 0.6",
@@ -184,35 +184,37 @@
     // "format-alt": " {essid}",
     "format-alt": "{essid}  {bandwidthUpBits} |  {bandwidthDownBits}",
     "tooltip-format": " {ifname} via {gwaddr}",
-    "on-click-right": "nm-connection-editor"
+    "on-click-middle": "nm-connection-editor"
   },
-  // waybar-pulseaudio
-  "pulseaudio": {
-    "format": "{icon} {volume}% {format_source}",
-    "format-bluetooth": " {volume}% {format_source}",
-    "format-muted": " Mute {format_source}",
-    "format-bluetooth-muted": " Mute {format_source}",
-    "format-source": "󰍬 {volume}%",
-    "format-source-muted": "󰍭 Mute",
+  "pulseaudio#input": {
+    "format": "{icon} {volume}%",
+    "format-bluetooth": " {volume}%",
+    "format-muted": " Mute",
+    "format-bluetooth-muted": " Mute",
+    "scroll-step": 5.0,
     "format-icons": {
-      "headphone": "",
-      "hands-free": "",
-      "headset": "",
-      "phone": "",
-      "portable": "",
-      "car": "",
       "default": [
         "",
         "",
         ""
       ]
     },
-    "scroll-step": 5.0,
     // Commands to execute on events
-    "on-click": "pulsemixer --toggle-mute",
+    "on-click": "pulsemixer --mute",
+    "on-click-right": "pulsemixer --unmute",
+    "on-click-middle": "pavucontrol --tab=3"
+  },
+  "pulseaudio#output": {
+    "format": "{format_source}",
+    "format-muted": "{format_source}",
+    "format-source": "󰍬 {volume}%",
+    "format-source-muted": "󰍭 Mute",
+    // Commands to execute on events
+    "on-scroll-up": "~/.config/hypr/.scripts/volume.sh --inc-mic",
+    "on-scroll-down": "~/.config/hypr/.scripts/volume.sh --dec-mic",
+    "on-click": "~/.config/hypr/.scripts/volume.sh --mute-mic",
     "on-click-right": "~/.config/hypr/.scripts/volume.sh --toggle-mic",
-    "on-click-middle": "pavucontrol",
-    "smooth-scrolling-threshold": 1.0
+    "on-click-middle": "pavucontrol --tab=4"
   },
   // waybar-idle-inhibitor
   "idle_inhibitor": {
@@ -230,3 +232,31 @@
     "reverse-direction": true
   }
 }
+// waybar-pulseaudio
+// "pulseaudio": {
+//   "format": "{icon} {volume}% {format_source}",
+//   "format-bluetooth": " {volume}% {format_source}",
+//   "format-muted": " Mute {format_source}",
+//   "format-bluetooth-muted": " Mute {format_source}",
+//   "format-source": "󰍬 {volume}%",
+//   "format-source-muted": "󰍭 Mute",
+//   "format-icons": {
+//     "headphone": "",
+//     "hands-free": "",
+//     "headset": "",
+//     "phone": "",
+//     "portable": "",
+//     "car": "",
+//     "default": [
+//       "",
+//       "",
+//       ""
+//     ]
+//   },
+//   "scroll-step": 5.0,
+//   // Commands to execute on events
+//   "on-click": "pulsemixer --toggle-mute",
+//   "on-click-right": "~/.config/hypr/.scripts/volume.sh --toggle-mic",
+//   "on-click-middle": "pavucontrol",
+//   "smooth-scrolling-threshold": 1.0
+// },

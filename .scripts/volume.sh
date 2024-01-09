@@ -24,18 +24,15 @@ get_icon() {
 	fi
 }
 
-# Notify
 notify_user() {
 	${notify_cmd} -i "$icon" "Volume : $(get_volume)%"
 }
 
-# Increase Volume
 inc_volume() {
 	[[ $(pulsemixer --get-mute) == 1 ]] && pulsemixer --unmute
 	pulsemixer --max-volume 100 --change-volume +5 && get_icon && notify_user
 }
 
-# Decrease Volume
 dec_volume() {
 	[[ $(pulsemixer --get-mute) == 1 ]] && pulsemixer --unmute
 	pulsemixer --max-volume 100 --change-volume -5 && get_icon && notify_user
@@ -50,21 +47,62 @@ toggle_mute() {
 	fi
 }
 
-# Toggle Mic
 toggle_mic() {
 	IDS="$(pulsemixer --list-sources | grep 'Source:' | cut -d',' -f1 | cut -d' ' -f3)"
 
-	# Set IFS to a line break to split the string into an array
-	IFS=$'\n'
+	IFS=$'\n' # Set IFS to a line break to split the string into an array
 	read -d '' -ra IDS_ARRAY <<<"$IDS"
 
 	for ID in "${IDS_ARRAY[@]}"; do
-		echo "$ID"
 		if [[ $(pulsemixer --id "$ID" --get-mute) == 0 ]]; then
 			pulsemixer --id "$ID" --toggle-mute
 		else
 			pulsemixer --id "$ID" --toggle-mute
 		fi
+	done
+}
+
+mute_mic() {
+	IDS="$(pulsemixer --list-sources | grep 'Source:' | cut -d',' -f1 | cut -d' ' -f3)"
+
+	IFS=$'\n' # Set IFS to a line break to split the string into an array
+	read -d '' -ra IDS_ARRAY <<<"$IDS"
+
+	for ID in "${IDS_ARRAY[@]}"; do
+		pulsemixer --id "$ID" --mute
+	done
+}
+
+unmute_mic() {
+	IDS="$(pulsemixer --list-sources | grep 'Source:' | cut -d',' -f1 | cut -d' ' -f3)"
+
+	IFS=$'\n' # Set IFS to a line break to split the string into an array
+	read -d '' -ra IDS_ARRAY <<<"$IDS"
+
+	for ID in "${IDS_ARRAY[@]}"; do
+		pulsemixer --id "$ID" --unmute
+	done
+}
+
+dec_mic() {
+	IDS="$(pulsemixer --list-sources | grep 'Source:' | cut -d',' -f1 | cut -d' ' -f3)"
+
+	IFS=$'\n' # Set IFS to a line break to split the string into an array
+	read -d '' -ra IDS_ARRAY <<<"$IDS"
+
+	for ID in "${IDS_ARRAY[@]}"; do
+		pulsemixer --id "$ID" --max-volume 100 --change-volume -5
+	done
+}
+
+inc_mic() {
+	IDS="$(pulsemixer --list-sources | grep 'Source:' | cut -d',' -f1 | cut -d' ' -f3)"
+
+	IFS=$'\n' # Set IFS to a line break to split the string into an array
+	read -d '' -ra IDS_ARRAY <<<"$IDS"
+
+	for ID in "${IDS_ARRAY[@]}"; do
+		pulsemixer --id "$ID" --max-volume 100 --change-volume +5
 	done
 }
 
@@ -80,6 +118,14 @@ if [[ -x $(which pulsemixer) ]]; then
 		toggle_mute
 	elif [[ "$1" == "--toggle-mic" ]]; then
 		toggle_mic
+	elif [[ "$1" == "--mute-mic" ]]; then
+		mute_mic
+	elif [[ "$1" == "--unmute-mic" ]]; then
+		unmute_mic
+	elif [[ "$1" == "--dec-mic" ]]; then
+		dec_mic
+	elif [[ "$1" == "--inc-mic" ]]; then
+		inc_mic
 	else
 		echo $(get_volume)%
 	fi

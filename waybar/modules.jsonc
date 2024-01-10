@@ -126,13 +126,7 @@
         "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
       }
     },
-    "actions": {
-      "on-click-right": "mode",
-      "on-click-forward": "tz_up",
-      "on-click-backward": "tz_down",
-      "on-scroll-up": "shift_up",
-      "on-scroll-down": "shift_down"
-    }
+    "on-click": "xdg-open https://calendar.google.com/calendar"
   },
   "temperature": {
     // "thermal-zone": 2,
@@ -175,16 +169,14 @@
   // waybar-network
   "network": {
     "interval": 5,
-    //"interface": "wlan*", // (Optional) To force the use of this interface, set it for netspeed to work
-    "format-wifi": " Wi-Fi",
+    "max-length": 20,
+    "format-wifi": " {essid}",
     "format-ethernet": " Wired",
     "format-linked": " {ifname} (No IP)",
     "format-disconnected": "睊 Disconnected",
     "format-disabled": "睊 Disabled",
-    // "format-alt": " {essid}",
-    "format-alt": "{essid}  {bandwidthUpBits} |  {bandwidthDownBits}",
     "tooltip-format": " {ifname} via {gwaddr}",
-    "on-click-middle": "nm-connection-editor"
+    "on-click": "nm-connection-editor"
   },
   "pulseaudio#input": {
     "format": "{icon} {volume}%",

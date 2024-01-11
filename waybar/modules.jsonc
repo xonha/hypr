@@ -109,7 +109,7 @@
     "rotate": 0,
     "locale": "en_US.UTF-8",
     //"timezone": "America/New_York",
-    "format": "{: %I:%M  󰃭 %a %d %b}",
+    "format": "{:󰃭 %a %d %b |  %I:%M}",
     // "format-alt": " {:%a %b %d, %G}": " {:%I:%M %p}",
     "tooltip-format": "<tt><small>{calendar}</small></tt>",
     "calendar": {
@@ -128,6 +128,7 @@
     },
     "on-scroll-up": "pulsemixer --max-volume 100 --change-volume +5",
     "on-scroll-down": "pulsemixer --max-volume 100 --change-volume -5",
+    "on-click-middle": "pavucontrol --tab=1",
     "on-click": "xdg-open https://calendar.google.com/calendar"
   },
   "temperature": {
@@ -208,7 +209,7 @@
     "on-scroll-down": "~/.config/hypr/.scripts/volume.sh --dec-mic",
     "on-click": "~/.config/hypr/.scripts/volume.sh --toggle-mic",
     "on-click-right": "~/.config/hypr/.scripts/volume.sh --mute-mic",
-    "on-click-middle": "pavucontrol --tab=4"
+    "on-click-middle": "pavucontrol --tab=1"
   },
   // waybar-idle-inhibitor
   "idle_inhibitor": {

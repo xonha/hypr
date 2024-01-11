@@ -19,24 +19,24 @@
     "margin-right": 10,
     "fixed-center": true,
     "ipc": true,
-    "modules-left": [
-        "clock",
-        "pulseaudio#input",
-        "pulseaudio#output",
-        "custom/display-temperature",
-        "custom/display-brightness",
-        "backlight",
+    "modules-right": [
+        "battery",
         "network",
-        "battery"
+        "backlight",
+        "custom/display-brightness",
+        "custom/display-temperature",
+        "pulseaudio#output",
+        "pulseaudio#input",
+        "clock"
     ],
     "modules-center": [
         "hyprland/workspaces",
         "tray"
     ],
-    "modules-right": [
-        "disk",
-        "memory",
+    "modules-left": [
+        "temperature",
         "cpu",
-        "temperature"
+        "memory",
+        "disk"
     ]
 }

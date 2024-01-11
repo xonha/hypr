@@ -126,6 +126,8 @@
         "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
       }
     },
+    "on-scroll-up": "pulsemixer --max-volume 100 --change-volume +5",
+    "on-scroll-down": "pulsemixer --max-volume 100 --change-volume -5",
     "on-click": "xdg-open https://calendar.google.com/calendar"
   },
   "temperature": {

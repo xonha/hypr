@@ -9,6 +9,15 @@
   padding: 0px 2px;
 }
 
+/** ********** Keyboard State ********** **/
+#keyboard-state {
+  color: @Overlay1;
+}
+
+#keyboard-state label.locked {
+  color: @Blue;
+}
+
 /** ********** Workspace Colors ********** **/
 #workspaces button {
   color: @Overlay0;
@@ -95,9 +104,10 @@ window#waybar.hidden {
   color: @Lavender;
 }
 #pulseaudio.output {
-  color: @Blue;
+  color: @Lavender;
 }
-#pulseaudio.input.muted, #pulseaudio.output.source-muted {
+#pulseaudio.input.muted,
+#pulseaudio.output.source-muted {
   color: @Overlay1;
 }
 
@@ -170,7 +180,8 @@ window#waybar.hidden {
 #network,
 #custom-menu,
 #custom-power,
+#keyboard-state,
 #custom-display-temperature,
-#custom-display-brightness{
+#custom-display-brightness {
   padding: 0px 8px;
 }

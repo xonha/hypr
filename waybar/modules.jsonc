@@ -15,11 +15,11 @@
       "7": "󰺻",
       "8": "",
       "9": "󰙯",
-      "urgent": ""
+      "urgent": "",
       // "active": "",
       // "default": ""
     },
-    "sort-by-number": true
+    "sort-by-number": true,
   },
   "custom/display-temperature": {
     "format": " {}K",
@@ -27,7 +27,7 @@
     "on-click": "busctl --user set-property rs.wl-gammarelay / rs.wl.gammarelay Temperature q 4500",
     "on-click-right": "busctl --user set-property rs.wl-gammarelay / rs.wl.gammarelay Temperature q 6500",
     "on-scroll-up": "busctl --user -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateTemperature n +100",
-    "on-scroll-down": "busctl --user -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateTemperature n -100"
+    "on-scroll-down": "busctl --user -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateTemperature n -100",
   },
   "custom/display-brightness": {
     "format": " {}%",
@@ -35,19 +35,19 @@
     "on-click": "busctl --user set-property rs.wl-gammarelay / rs.wl.gammarelay Brightness d 0.6",
     "on-click-right": "busctl --user set-property rs.wl-gammarelay / rs.wl.gammarelay Brightness d 1",
     "on-scroll-up": "busctl --user -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateBrightness d +0.05",
-    "on-scroll-down": "busctl --user -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateBrightness d -0.05"
+    "on-scroll-down": "busctl --user -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateBrightness d -0.05",
   },
   "keyboard-state": {
-    "numlock": true,
+    "numlock": false,
     "capslock": true,
     "format": {
-      "numlock": "N {icon}",
-      "capslock": "C {icon}"
+      "numlock": "{icon} Num",
+      "capslock": "{icon} Caps",
     },
     "format-icons": {
       "locked": "",
-      "unlocked": ""
-    }
+      "unlocked": "",
+    },
   },
   // waybar-backlight
   "backlight": {
@@ -56,12 +56,7 @@
     "rotate": 0,
     //"device": "amdgpu_bl0",
     "format": "{icon} {percent}%",
-    "format-icons": [
-      "",
-      "",
-      "",
-      ""
-    ],
+    "format-icons": ["", "", "", ""],
     // Commands to execute on events
     "on-click": "",
     "on-click-middle": "",
@@ -69,7 +64,7 @@
     "on-update": "",
     "on-scroll-up": "light -A 5%",
     "on-scroll-down": "light -U 5%",
-    "smooth-scrolling-threshold": 1
+    "smooth-scrolling-threshold": 1,
   },
   // waybar-battery
   "battery": {
@@ -84,7 +79,7 @@
       "good": 70,
       "warning": 40,
       "low": 25,
-      "critical": 10
+      "critical": 10,
     },
     "format": "{icon} {capacity}%",
     "format-charging": " {capacity}%",
@@ -92,15 +87,9 @@
     "format-full": "{icon} Full",
     //"format-good": "",
     "format-alt": "{icon} {time}",
-    "format-icons": [
-      "",
-      "",
-      "",
-      "",
-      ""
-    ],
+    "format-icons": ["", "", "", "", ""],
     "format-time": "{H}h {M}min",
-    "tooltip": true
+    "tooltip": true,
   },
   // waybar-clock
   "clock": {
@@ -109,7 +98,7 @@
     "rotate": 0,
     "locale": "en_US.UTF-8",
     //"timezone": "America/New_York",
-    "format": "{:󰃭 %a %d %b |  %I:%M}",
+    "format": "{:󰃭 %a %d %b  %I:%M}",
     // "format-alt": " {:%a %b %d, %G}": " {:%I:%M %p}",
     "tooltip-format": "<tt><small>{calendar}</small></tt>",
     "calendar": {
@@ -123,13 +112,13 @@
         "days": "<span color='#ecc6d9'><b>{}</b></span>",
         "weeks": "<span color='#99ffdd'><b>W{}</b></span>",
         "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
-        "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
-      }
+        "today": "<span color='#ff6699'><b><u>{}</u></b></span>",
+      },
     },
     "on-scroll-up": "pulsemixer --max-volume 100 --change-volume +5",
     "on-scroll-down": "pulsemixer --max-volume 100 --change-volume -5",
     "on-click-middle": "pavucontrol --tab=1",
-    "on-click": "xdg-open https://calendar.google.com/calendar"
+    "on-click": "xdg-open https://calendar.google.com/calendar",
   },
   "temperature": {
     // "thermal-zone": 2,
@@ -137,37 +126,33 @@
     "critical-threshold": 80,
     // "format-critical": "{temperatureC}°C {icon}",
     "format": "{icon} Temp: {temperatureC}°C",
-    "format-icons": [
-      "",
-      "",
-      ""
-    ]
+    "format-icons": ["", "", ""],
   },
   // waybar-cpu
   "cpu": {
     "interval": 5,
-    "format": " Load: {usage}%"
+    "format": " Load: {usage}%",
   },
   // waybar-custom
   "custom/menu": {
     "format": "",
     "tooltip": false,
-    "on-click": "$HOME/.config/hypr/.scripts/menu"
+    "on-click": "$HOME/.config/hypr/.scripts/menu",
   },
   "custom/power": {
     "format": "襤",
     "tooltip": false,
-    "on-click": "$HOME/.config/hypr/.scripts/wlogout"
+    "on-click": "$HOME/.config/hypr/.scripts/wlogout",
   },
   // waybar-disk
   "disk": {
     "interval": 30,
-    "format": " Free: {free}"
+    "format": " Free: {free}",
   },
   // waybar-memory
   "memory": {
     "interval": 10,
-    "format": " Used: {used:0.1f}G"
+    "format": " Used: {used:0.1f}G",
   },
   // waybar-network
   "network": {
@@ -179,7 +164,7 @@
     "format-disconnected": "睊 Disconnected",
     "format-disabled": "睊 Disabled",
     "tooltip-format": " {ifname} via {gwaddr}",
-    "on-click": "nm-connection-editor"
+    "on-click": "nm-connection-editor",
   },
   "pulseaudio#input": {
     "format": "{icon} {volume}%",
@@ -188,16 +173,12 @@
     "format-bluetooth-muted": " Mute",
     "scroll-step": 5.0,
     "format-icons": {
-      "default": [
-        "",
-        "",
-        ""
-      ]
+      "default": ["", "", ""],
     },
     // Commands to execute on events
     "on-click": "pulsemixer --toggle-mute",
     "on-click-right": "pulsemixer --mute",
-    "on-click-middle": "pavucontrol --tab=3"
+    "on-click-middle": "pavucontrol --tab=3",
   },
   "pulseaudio#output": {
     "format": "{format_source}",
@@ -209,23 +190,23 @@
     "on-scroll-down": "~/.config/hypr/.scripts/volume.sh --dec-mic",
     "on-click": "~/.config/hypr/.scripts/volume.sh --toggle-mic",
     "on-click-right": "~/.config/hypr/.scripts/volume.sh --mute-mic",
-    "on-click-middle": "pavucontrol --tab=1"
+    "on-click-middle": "pavucontrol --tab=1",
   },
   // waybar-idle-inhibitor
   "idle_inhibitor": {
     "format": "{icon}",
     "format-icons": {
       "activated": "",
-      "deactivated": ""
+      "deactivated": "",
     },
-    "timeout": 30
+    "timeout": 30,
   },
   // waybar-tray
   "tray": {
     "icon-size": 14,
     "spacing": 6,
-    "reverse-direction": true
-  }
+    "reverse-direction": true,
+  },
 }
 // waybar-pulseaudio
 // "pulseaudio": {
@@ -254,4 +235,5 @@
 //   "on-click-right": "~/.config/hypr/.scripts/volume.sh --toggle-mic",
 //   "on-click-middle": "pavucontrol",
 //   "smooth-scrolling-threshold": 1.0
+
 // },

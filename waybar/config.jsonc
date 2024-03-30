@@ -1,10 +1,9 @@
-// Waybar config file
 {
   "include": "~/.config/hypr/waybar/modules.jsonc",
   "name": "main-bar",
   "id": "main-bar",
   "layer": "top",
-  "mode": "dock",
+  // "mode": "dock",
   "exclusive": true,
   "passthrough": false,
   "gtk-layer-shell": false,

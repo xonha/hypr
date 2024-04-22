@@ -38,11 +38,12 @@ packages=(
 	noisetorch
 	mailspring
 	kooha
-	aur/wdisplays
 	xfce-polkit
 	wl-clipboard
 	python-virtualenv
 	vencord-desktop-git
+	aur/wdisplays
+	aur/hyprpicker
 	aur/wl-gammarelay-rs
 )
 

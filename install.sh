@@ -45,6 +45,7 @@ packages=(
 	aur/wdisplays
 	aur/hyprpicker
 	aur/wl-gammarelay-rs
+	aur/wlrctl
 )
 
 # Install packages using yay with --noconfirm option

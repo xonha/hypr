@@ -46,14 +46,15 @@ packages=(
 	wl-clipboard
 	python-virtualenv
 	vencord-desktop-git
-	aur/wdisplays
-	aur/hyprpicker
-	aur/wl-gammarelay-rs
-	aur/wlrctl
-	aur/youtube-music-next-bin
 	zsh-completions
 	zsh-autosuggestions
 	zsh-syntax-highlighting
+	aur/wdisplays
+	aur/hyprpicker
+	aur/wl-gammarelay-rs
+	aur/todoist-nativefier
+	aur/wlrctl
+	aur/youtube-music-next-bin
 )
 
 # Install packages using yay with --noconfirm option

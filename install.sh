@@ -2,8 +2,8 @@
 
 # List of packages to install
 packages=(
+	debugedit
 	catppuccin-gtk-theme-mocha
-	fish
 	github-cli
 	google-chrome
 	grim
@@ -15,20 +15,23 @@ packages=(
 	lxappearance
 	mako
 	mpv
+	neovim
+	npm
 	nemo
 	nemo-audio-tab
 	nemo-fileroller
 	nemo-preview
 	nemo-python
-	neovim
 	papirus-folders-catppuccin-git
 	qalculate-gtk
 	pipewire
 	pipewire-pulse
+	ripgrep
 	xdg-desktop-portal-wlr
 	slurp
 	stremio
 	swaybg
+	ttf-jetbrains-mono-nerd
 	swaylock
 	swappy
 	visual-studio-code-bin
@@ -36,6 +39,7 @@ packages=(
 	wget
 	waybar
 	noisetorch
+	lazygit
 	mailspring
 	kooha
 	xfce-polkit
@@ -46,6 +50,10 @@ packages=(
 	aur/hyprpicker
 	aur/wl-gammarelay-rs
 	aur/wlrctl
+	aur/youtube-music-next-bin
+	zsh-completions
+	zsh-autosuggestions
+	zsh-syntax-highlighting
 )
 
 # Install packages using yay with --noconfirm option

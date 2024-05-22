@@ -57,8 +57,14 @@ packages=(
 	aur/youtube-music-next-bin
 )
 
-# Install packages using yay with --noconfirm option
-yay -Syu --needed --noconfirm "${packages[@]}"
+echo "Installing packages..."
+yay -Syu --needed --noconfirm --removemake "${packages[@]}"
+echo "Done."
 
-# Apply the Papirus-Dark theme to Papirus-Folders
+echo "Setting up papirus-folders..."
 papirus-folders -C cat-mocha-mauve --theme Papirus-Dark
+echo "Done."
+
+echo "Setting up user input permissions..."
+sudo usermod -a -G input "$USER"
+echo "Done."

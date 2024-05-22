@@ -24,7 +24,7 @@
     "backlight",
     "custom/display-brightness",
     "custom/display-temperature",
-    "keyboard-state",
+    // "keyboard-state",
     "pulseaudio#output",
     "pulseaudio#input",
     "clock",

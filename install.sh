@@ -34,6 +34,7 @@ packages=(
 	ttf-jetbrains-mono-nerd
 	swaylock
 	swappy
+	docker
 	visual-studio-code-bin
 	wofi
 	wget
@@ -55,6 +56,7 @@ packages=(
 	aur/todoist-nativefier
 	aur/wlrctl
 	aur/youtube-music-next-bin
+	aur/lazydocker-bin
 )
 
 echo "Installing packages..."

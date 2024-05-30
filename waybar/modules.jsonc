@@ -38,6 +38,7 @@
   "keyboard-state": {
     "numlock": false,
     "capslock": true,
+    "device-path": "/dev/input/event3",
     "format": {
       "numlock": "{icon} Num",
       "capslock": "{icon} Caps",
@@ -182,7 +183,7 @@
     "format": "{format_source}",
     "format-muted": "{format_source}",
     "format-source": "󰍬 {volume}%",
-    "format-source-muted": "󰍭 Mute",
+    "format-source-muted": "󰍭",
     // Commands to execute on events
     "on-scroll-up": "~/.config/hypr/.scripts/volume.sh --inc-mic",
     "on-scroll-down": "~/.config/hypr/.scripts/volume.sh --dec-mic",

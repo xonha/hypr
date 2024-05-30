@@ -19,12 +19,12 @@
   "fixed-center": true,
   "ipc": true,
   "modules-right": [
+    "keyboard-state",
     "battery",
     "network",
     "backlight",
     "custom/display-brightness",
     "custom/display-temperature",
-    // "keyboard-state",
     "pulseaudio#output",
     "pulseaudio#input",
     "clock",

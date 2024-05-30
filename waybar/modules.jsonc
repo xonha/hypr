@@ -168,12 +168,12 @@
   },
   "pulseaudio#input": {
     "format": "{icon} {volume}%",
-    "format-bluetooth": " {volume}%",
+    "format-bluetooth": " {volume}",
     "format-muted": " Mute",
     "format-bluetooth-muted": " Mute",
     "scroll-step": 5.0,
     "format-icons": {
-      "default": ["", "", ""],
+      "default": [""],
     },
     // Commands to execute on events
     "on-click": "pulsemixer --toggle-mute",
@@ -182,8 +182,8 @@
   "pulseaudio#output": {
     "format": "{format_source}",
     "format-muted": "{format_source}",
-    "format-source": "󰍬 {volume}%",
-    "format-source-muted": "󰍭",
+    "format-source": " {volume}%",
+    "format-source-muted": " Mute",
     // Commands to execute on events
     "on-scroll-up": "~/.config/hypr/.scripts/volume.sh --inc-mic",
     "on-scroll-down": "~/.config/hypr/.scripts/volume.sh --dec-mic",

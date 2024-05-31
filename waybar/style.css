@@ -75,7 +75,7 @@ window#waybar.hidden {
 }
 #pulseaudio.input.muted,
 #pulseaudio.output.source-muted {
-  color: @Overlay1;
+  color: @Surface1;
 }
 
 #network {

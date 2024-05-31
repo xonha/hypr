@@ -54,6 +54,7 @@ packages=(
 	aur/hyprpicker
 	aur/wl-gammarelay-rs
 	aur/todoist-nativefier
+	aur/valent-git
 	aur/wlrctl
 	aur/youtube-music-next-bin
 	aur/lazydocker-bin

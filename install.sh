@@ -46,10 +46,10 @@ packages=(
 	xfce-polkit
 	wl-clipboard
 	python-virtualenv
-	vencord-desktop-git
 	zsh-completions
 	zsh-autosuggestions
 	zsh-syntax-highlighting
+	aur/vesktop-bin
 	aur/wdisplays
 	aur/hyprpicker
 	aur/wl-gammarelay-rs

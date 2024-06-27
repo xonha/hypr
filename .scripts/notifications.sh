@@ -5,5 +5,5 @@
 CONFIG="$HOME/.config/hypr/mako/config.conf"
 
 if [[ ! $(pidof mako) ]]; then
-	mako --config ${CONFIG}
+	mako --config "${CONFIG}"
 fi

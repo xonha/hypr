@@ -19,4 +19,4 @@ else
 fi
 
 # Execute the command
-wlrctl window focus "$APP_FOCUS_NAME" || $APP_NAME
+wlrctl window focus "$APP_FOCUS_NAME" || hyprctl dispatch exec "$APP_NAME"

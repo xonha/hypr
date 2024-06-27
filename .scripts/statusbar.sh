@@ -9,7 +9,7 @@ STYLE="$DIR/style.css"
 trap "killall waybar" EXIT
 
 while true; do
-    waybar --bar main-bar --log-level error --config ${CONFIG} --style ${STYLE} &
-    inotifywait -e create,modify $DIR
-    killall waybar
+	waybar --bar main-bar --log-level error --config "${CONFIG}" --style "${STYLE}" &
+	inotifywait -e create,modify "$DIR"
+	killall waybar
 done

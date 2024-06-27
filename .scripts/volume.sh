@@ -7,7 +7,7 @@ notify_cmd='notify-send -h string:x-canonical-private-synchronous:sys-notify-vol
 
 # Get Volume
 get_volume() {
-	echo "$(pulsemixer --get-volume | cut -d' ' -f1)"
+	pulsemixer --get-volume | cut -d' ' -f1
 }
 
 # Get icons
@@ -127,7 +127,7 @@ if [[ -x $(which pulsemixer) ]]; then
 	elif [[ "$1" == "--inc-mic" ]]; then
 		inc_mic
 	else
-		echo $(get_volume)%
+		echo "$(get_volume)"%
 	fi
 else
 	${notify_cmd} "'pulsemixer' is not installed."

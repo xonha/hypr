@@ -55,7 +55,12 @@
     "rotate": 0,
     //"device": "amdgpu_bl0",
     "format": "{icon} {percent}%",
-    "format-icons": ["", "", "", ""],
+    "format-icons": [
+      "",
+      "",
+      "",
+      ""
+    ],
     // Commands to execute on events
     "on-click": "",
     "on-click-middle": "",
@@ -86,7 +91,13 @@
     "format-full": "{icon} Full",
     //"format-good": "",
     "format-alt": "{icon} {time}",
-    "format-icons": ["", "", "", "", ""],
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
     "format-time": "{H}h {M}min",
     "tooltip": true,
   },
@@ -126,7 +137,11 @@
     "critical-threshold": 80,
     // "format-critical": "{temperatureC}°C {icon}",
     "format": "{icon} Temp: {temperatureC}°C",
-    "format-icons": ["", "", ""],
+    "format-icons": [
+      "",
+      "",
+      ""
+    ],
   },
   // waybar-cpu
   "cpu": {
@@ -137,12 +152,12 @@
   "custom/menu": {
     "format": "",
     "tooltip": false,
-    "on-click": "$HOME/.config/hypr/.scripts/menu",
+    "on-click": "$HOME/.config/hypr/_scripts/menu",
   },
   "custom/power": {
     "format": "襤",
     "tooltip": false,
-    "on-click": "$HOME/.config/hypr/.scripts/wlogout",
+    "on-click": "$HOME/.config/hypr/_scripts/wlogout",
   },
   // waybar-disk
   "disk": {
@@ -173,7 +188,9 @@
     "format-bluetooth-muted": " Mute",
     "scroll-step": 5.0,
     "format-icons": {
-      "default": [""],
+      "default": [
+        ""
+      ],
     },
     // Commands to execute on events
     "on-click": "pulsemixer --toggle-mute",
@@ -185,9 +202,9 @@
     "format-source": " {volume}%",
     "format-source-muted": "",
     // Commands to execute on events
-    "on-scroll-up": "~/.config/hypr/.scripts/volume.sh --inc-mic",
-    "on-scroll-down": "~/.config/hypr/.scripts/volume.sh --dec-mic",
-    "on-click": "~/.config/hypr/.scripts/volume.sh --toggle-mic",
+    "on-scroll-up": "~/.config/hypr/_scripts/volume.sh --inc-mic",
+    "on-scroll-down": "~/.config/hypr/_scripts/volume.sh --dec-mic",
+    "on-click": "~/.config/hypr/_scripts/volume.sh --toggle-mic",
     "on-click-right": "pavucontrol --tab=4",
   },
   // waybar-idle-inhibitor
@@ -230,8 +247,7 @@
 //   "scroll-step": 5.0,
 //   // Commands to execute on events
 //   "on-click": "pulsemixer --toggle-mute",
-//   "on-click-right": "~/.config/hypr/.scripts/volume.sh --toggle-mic",
+//   "on-click-right": "~/.config/hypr/_scripts/volume.sh --toggle-mic",
 //   "on-click-middle": "pavucontrol",
 //   "smooth-scrolling-threshold": 1.0
-
 // },

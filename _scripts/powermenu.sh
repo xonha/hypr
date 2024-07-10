@@ -52,14 +52,14 @@ open_menu() {
 		fi
 		;;
 	$lock)
-		~/.config/hypr/.scripts/lockscreen.sh
+		~/.config/hypr/_scripts/lockscreen.sh
 		;;
 	$suspend)
 		cdialog
 		if [[ "$?" == 0 ]]; then
 			mpc -q pause
 			pulsemixer --mute
-			~/.config/hypr/.scripts/lockscreen.sh
+			~/.config/hypr/_scripts/lockscreen.sh
 			systemctl suspend
 		else
 			exit

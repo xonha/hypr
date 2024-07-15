@@ -30,5 +30,5 @@
     "clock",
   ],
   "modules-center": ["hyprland/workspaces", "tray"],
-  "modules-left": ["temperature", "cpu", "memory", "disk"],
+  "modules-left": ["custom/power", "temperature", "cpu", "memory", "disk"],
 }

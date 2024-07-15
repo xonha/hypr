@@ -29,6 +29,10 @@ window#waybar.hidden {
   color: @Text;
 }
 
+#custom-power {
+  color: @Red;
+}
+
 #temperature {
   color: @Red;
 }

@@ -55,12 +55,7 @@
     "rotate": 0,
     //"device": "amdgpu_bl0",
     "format": "{icon} {percent}%",
-    "format-icons": [
-      "",
-      "",
-      "",
-      ""
-    ],
+    "format-icons": ["", "", "", ""],
     // Commands to execute on events
     "on-click": "",
     "on-click-middle": "",
@@ -91,13 +86,7 @@
     "format-full": "{icon} Full",
     //"format-good": "",
     "format-alt": "{icon} {time}",
-    "format-icons": [
-      "",
-      "",
-      "",
-      "",
-      ""
-    ],
+    "format-icons": ["", "", "", "", ""],
     "format-time": "{H}h {M}min",
     "tooltip": true,
   },
@@ -137,11 +126,7 @@
     "critical-threshold": 80,
     // "format-critical": "{temperatureC}°C {icon}",
     "format": "{icon} Temp: {temperatureC}°C",
-    "format-icons": [
-      "",
-      "",
-      ""
-    ],
+    "format-icons": ["", "", ""],
   },
   // waybar-cpu
   "cpu": {
@@ -157,7 +142,7 @@
   "custom/power": {
     "format": "襤",
     "tooltip": false,
-    "on-click": "$HOME/.config/hypr/_scripts/wlogout",
+    "on-click": ".config/hypr/_scripts/powermenu.sh",
   },
   // waybar-disk
   "disk": {
@@ -188,9 +173,7 @@
     "format-bluetooth-muted": " Mute",
     "scroll-step": 5.0,
     "format-icons": {
-      "default": [
-        ""
-      ],
+      "default": [""],
     },
     // Commands to execute on events
     "on-click": "pulsemixer --toggle-mute",
@@ -250,4 +233,5 @@
 //   "on-click-right": "~/.config/hypr/_scripts/volume.sh --toggle-mic",
 //   "on-click-middle": "pavucontrol",
 //   "smooth-scrolling-threshold": 1.0
+
 // },

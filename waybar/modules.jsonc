@@ -96,14 +96,14 @@
     "align": 0,
     "rotate": 0,
     "locale": "en_US.UTF-8",
-    // "timezone": "America/New_York",
-    "format": "{:%a %d %b %I:%M}",
+    "timezones": ["America/Sao_Paulo", "America/Los_Angeles"],
+    "format": "{:%a %d %b %Z %I:%M}",
     // "format": "{:󰃭 %a %d %b  %I:%M}",
     // "format-alt": " {:%a %b %d, %G}:  {:%I:%M %p}",
     "tooltip-format": "<tt><small>{calendar}</small></tt>",
     "calendar": {
       "mode": "year",
-      "mode-mon-col": 2,
+      "mode-mon-col": 3,
       "weeks-pos": "right",
       "on-scroll": 1,
       "on-click-right": "mode",
@@ -119,6 +119,9 @@
     "on-scroll-down": "pulsemixer --max-volume 100 --change-volume -5",
     "on-click": "xdg-open https://calendar.google.com/calendar",
     "on-click-right": "pavucontrol --tab=1",
+    "actions": {
+      "on-click-middle": "tz_up",
+    },
   },
   "temperature": {
     // "thermal-zone": 2,

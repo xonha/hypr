@@ -39,7 +39,8 @@ packages=(
   wofi
   wget
   waybar
-  noisetorch
+  noisetorch-bin
+  whatsapp-for-linux-bin
   lazygit
   mailspring
   kooha

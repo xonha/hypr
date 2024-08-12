@@ -13,6 +13,7 @@
       "22": "󰺻",
       "23": "",
       "24": "󰙯",
+      "25": "",
       "urgent": "",
       // "active": "",
       // "default": ""
@@ -97,7 +98,8 @@
     "rotate": 0,
     "locale": "en_US.UTF-8",
     "timezones": ["America/Sao_Paulo", "America/Los_Angeles"],
-    "format": "{:%a %d %b %Z %I:%M}",
+    "format": "{:%a %d %b %I:%M}",
+    "format-alt": "{:%a %d %b %I:%M %Z}",
     // "format": "{:󰃭 %a %d %b  %I:%M}",
     // "format-alt": " {:%a %b %d, %G}:  {:%I:%M %p}",
     "tooltip-format": "<tt><small>{calendar}</small></tt>",

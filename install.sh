@@ -40,7 +40,6 @@ packages=(
   wget
   waybar
   noisetorch-bin
-  whatsapp-for-linux-bin
   lazygit
   mailspring
   kooha

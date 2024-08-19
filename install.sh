@@ -30,9 +30,9 @@ packages=(
   xdg-desktop-portal-wlr
   slurp
   stremio
-  swaybg
+  hyprpaper
+  hyprlock
   ttf-jetbrains-mono-nerd
-  swaylock
   swappy
   docker
   visual-studio-code-bin

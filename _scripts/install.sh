@@ -13,7 +13,6 @@ packages=(
   kitty
   light
   lxappearance
-  mako
   mpv
   neovim
   npm

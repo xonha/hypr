@@ -183,6 +183,7 @@
     // Commands to execute on events
     "on-click": "pulsemixer --toggle-mute",
     "on-click-right": "pavucontrol --tab=3",
+    "on-click-middle": "~/.config/hypr/_scripts/switchaudio.sh",
   },
   "pulseaudio#output": {
     "format": "{format_source}",

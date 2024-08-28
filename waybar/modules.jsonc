@@ -142,12 +142,12 @@
   "custom/menu": {
     "format": "",
     "tooltip": false,
-    "on-click": "$HOME/.config/hypr/_scripts/menu",
+    "on-click": "~/.config/hypr/wofi/menu.sh",
   },
   "custom/power": {
     "format": "襤",
     "tooltip": false,
-    "on-click": ".config/hypr/_scripts/powermenu.sh",
+    "on-click": "~/.config/hypr/wofi/powermenu.sh",
   },
   // waybar-disk
   "disk": {

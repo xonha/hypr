@@ -97,7 +97,7 @@
     "align": 0,
     "rotate": 0,
     "locale": "en_US.UTF-8",
-    "timezones": ["America/Sao_Paulo", "America/Los_Angeles"],
+    "timezone": "America/Sao_Paulo",
     "format": "{:%a %d %b %I:%M}",
     "format-alt": "{:%a %d %b %I:%M %Z}",
     // "format": "{:󰃭 %a %d %b  %I:%M}",
@@ -121,9 +121,6 @@
     "on-scroll-down": "pulsemixer --max-volume 100 --change-volume -5",
     "on-click": "xdg-open https://calendar.google.com/calendar",
     "on-click-right": "pavucontrol --tab=1",
-    "actions": {
-      "on-click-middle": "tz_up",
-    },
   },
   "temperature": {
     // "thermal-zone": 2,
@@ -178,7 +175,13 @@
     "format-bluetooth-muted": " Mute",
     "scroll-step": 5.0,
     "format-icons": {
-      "default": [""],
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": ["", "", ""],
     },
     // Commands to execute on events
     "on-click": "pulsemixer --toggle-mute",

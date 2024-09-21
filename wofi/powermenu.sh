@@ -51,7 +51,7 @@ open_menu() {
     fi
     ;;
   $lock)
-    hyprlock
+    hyprlock --config ~/.config/hypr/lockscreen/hyprlock.conf
     ;;
   $logout)
     cdialog

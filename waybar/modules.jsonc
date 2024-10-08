@@ -160,12 +160,12 @@
   "network": {
     "interval": 5,
     "max-length": 20,
-    "format-wifi": " {essid}",
+    "format-wifi": " Wifi",
     "format-ethernet": " Wired",
     "format-linked": " {ifname} (No IP)",
     "format-disconnected": "睊 Disconnected",
     "format-disabled": "睊 Disabled",
-    "tooltip-format": " {ifname} via {gwaddr}",
+    "tooltip-format": " {essid} via {gwaddr}",
     "on-click": "nm-connection-editor",
   },
   "pulseaudio#input": {

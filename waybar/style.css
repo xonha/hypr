@@ -71,6 +71,10 @@ window#waybar.hidden {
   color: @Sky;
 }
 
+#backlight {
+  color: @Sky;
+}
+
 #pulseaudio.input {
   color: @Lavender;
 }

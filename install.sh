@@ -5,11 +5,9 @@ packages=(
   debugedit
   catppuccin-gtk-theme-mocha
   github-cli
-  google-chrome
   grim
   guake
   hyprland
-  keeweb-desktop-bin
   kitty
   light
   lxappearance
@@ -28,19 +26,17 @@ packages=(
   ripgrep
   xdg-desktop-portal-wlr
   slurp
-  stremio
   hyprpaper
   hyprlock
   ttf-jetbrains-mono-nerd
   swappy
   docker
-  visual-studio-code-bin
   wofi
   wget
   waybar
   noisetorch-bin
   lazygit
-  mailspring
+  hyprpicker
   kooha
   xfce-polkit
   wl-clipboard
@@ -48,9 +44,13 @@ packages=(
   zsh-completions
   zsh-autosuggestions
   zsh-syntax-highlighting
+  aur/stremio
+  aur/keeweb-desktop-bin
+  aur/visual-studio-code-bin
+  aur/mailspring-bin
+  aur/google-chrome
   aur/vesktop-bin
   aur/wdisplays
-  aur/hyprpicker
   aur/wl-gammarelay-rs
   aur/todoist-nativefier
   aur/valent-git

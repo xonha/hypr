@@ -23,7 +23,7 @@
     "battery",
     "network",
     "backlight",
-    "custom/display-brightness",
+    // "custom/display-brightness",
     "custom/display-temperature",
     "pulseaudio#output",
     "pulseaudio#input",

@@ -13,7 +13,8 @@
       "22": "󰺻",
       "23": "",
       "24": "󰙯",
-      "25": "",
+      "25": "󰖣",
+      "26": "",
       "urgent": "",
       // "active": "",
       // "default": ""
@@ -99,7 +100,7 @@
     "locale": "en_US.UTF-8",
     "timezone": "America/Sao_Paulo",
     "format": "{:%a %d %b %I:%M}",
-    "format-alt": "{:%a %d %b %I:%M %Z}",
+    // "format-alt": "{:%a %d %b %I:%M %Z}",
     // "format": "{:󰃭 %a %d %b  %I:%M}",
     // "format-alt": " {:%a %b %d, %G}:  {:%I:%M %p}",
     "tooltip-format": "<tt><small>{calendar}</small></tt>",
@@ -169,9 +170,9 @@
     "on-click": "nm-connection-editor",
   },
   "pulseaudio#input": {
-    "format": "{icon} {volume}%",
+    "format": "{icon}  {volume}%",
     "format-bluetooth": " {volume}",
-    "format-muted": " Mute",
+    "format-muted": "  Mute",
     "format-bluetooth-muted": " Mute",
     "scroll-step": 5.0,
     "format-icons": {

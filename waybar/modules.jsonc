@@ -5,7 +5,7 @@
     "format": "{icon}",
     "on-click": "activate",
     "format-icons": {
-      "1": "",
+      "1": "",
       "8": "",
       "9": "",
       "20": "󰎆",
@@ -29,7 +29,7 @@
     "on-scroll-down": "busctl --user -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateTemperature n -100",
   },
   "custom/display-brightness": {
-    "format": " {}%",
+    "format": "  {}%",
     "exec": "wl-gammarelay-rs watch {bp}",
     "on-click": "busctl --user set-property rs.wl-gammarelay / rs.wl.gammarelay Brightness d 0.6",
     "on-click-right": "busctl --user set-property rs.wl-gammarelay / rs.wl.gammarelay Brightness d 1",
@@ -142,7 +142,7 @@
     "on-click": "~/.config/hypr/wofi/menu.sh",
   },
   "custom/power": {
-    "format": "襤",
+    "format": "",
     "tooltip": false,
     "on-click": "~/.config/hypr/wofi/powermenu.sh",
   },

@@ -68,12 +68,12 @@
   },
   // waybar-battery
   "battery": {
-    "interval": 60,
-    "align": 0,
-    "rotate": 0,
+    // "interval": 60,
+    // "align": 0,
+    // "rotate": 0,
     //"bat": "BAT1",
     //"adapter": "ACAD",
-    "design-capacity": false,
+    // "design-capacity": false,
     "full-at": 100,
     "states": {
       "good": 70,

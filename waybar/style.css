@@ -28,9 +28,14 @@ window#waybar.hidden {
 #workspaces button.visible {
   color: @Text;
 }
-
 #custom-power {
   color: @Red;
+}
+#custom-mako.active {
+  color: @Mauve;
+}
+#custom-mako.inactive {
+  color: @Surface1;
 }
 
 #temperature {
@@ -135,6 +140,7 @@ window#waybar.hidden {
 #temperature,
 #network,
 #custom-menu,
+#custom-mako,
 #custom-power,
 #keyboard-state,
 #custom-display-temperature,

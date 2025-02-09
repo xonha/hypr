@@ -28,6 +28,7 @@
     "pulseaudio#output",
     "pulseaudio#input",
     "clock",
+    "custom/mako",
   ],
   "modules-center": ["hyprland/workspaces", "tray"],
   "modules-left": ["custom/power", "temperature", "cpu", "memory", "disk"],

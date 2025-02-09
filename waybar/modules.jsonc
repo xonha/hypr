@@ -20,6 +20,22 @@
     },
     "sort-by-number": true,
   },
+  "custom/mako": {
+    "exec": "~/.config/hypr/_scripts/notifications.sh",
+    "interval": "once",
+    "on-click": "makoctl mode -t notifications",
+    "format": "{icon}",
+    "format-icons": {
+      "active": "",
+      "inactive": "󰂛",
+    },
+    "return-type": "json",
+    "tooltip": true,
+    "tooltip-format": {
+      "active": "",
+      "inactive": "",
+    },
+  },
   "custom/display-temperature": {
     "format": " {}K",
     "exec": "wl-gammarelay-rs watch {t}",
@@ -140,11 +156,6 @@
     "format": "",
     "tooltip": false,
     "on-click": "~/.config/hypr/wofi/menu.sh",
-  },
-  "custom/power": {
-    "format": "",
-    "tooltip": false,
-    "on-click": "~/.config/hypr/wofi/powermenu.sh",
   },
   // waybar-disk
   "disk": {

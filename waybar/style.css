@@ -29,8 +29,11 @@ window#waybar.hidden {
   color: @Text;
 }
 
-#custom-power {
-  color: @Red;
+#custom-mako.active {
+  color: @Mauve;
+}
+#custom-mako.inactive {
+  color: @Surface1;
 }
 
 #temperature {
@@ -135,7 +138,7 @@ window#waybar.hidden {
 #temperature,
 #network,
 #custom-menu,
-#custom-power,
+#custom-mako,
 #keyboard-state,
 #custom-display-temperature,
 #custom-display-brightness {

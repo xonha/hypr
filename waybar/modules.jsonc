@@ -25,6 +25,7 @@
     "format": "",
     "tooltip": false,
     "on-click": "~/.config/hypr/wofi/powermenu.sh",
+    "on-click-right": "~/.config/hypr/wofi/menu.sh",
   },
   "custom/mako": {
     "exec": "~/.config/hypr/_scripts/notifications.sh",

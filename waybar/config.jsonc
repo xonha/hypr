@@ -21,7 +21,7 @@
   "modules-right": [
     "keyboard-state",
     "battery",
-    "network",
+    // "network",
     // "backlight",
     "custom/display-brightness",
     "custom/display-temperature",

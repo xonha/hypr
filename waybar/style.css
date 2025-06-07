@@ -32,10 +32,10 @@ window#waybar.hidden {
   color: @Red;
 }
 #custom-mako.active {
-  color: @Mauve;
+  color: @Surface1;
 }
 #custom-mako.inactive {
-  color: @Surface1;
+  color: @Mauve;
 }
 
 #temperature {
